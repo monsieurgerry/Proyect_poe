@@ -17,6 +17,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
   public EmpleadoMenu() {
     initComponents();
     setLocationRelativeTo(null);
+    // pgInicio inicio = new pgInicio();
+    // showPanel(inicio);
   }
 
     /**
@@ -155,17 +157,17 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void comidaRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comidaRegistrarActionPerformed
-      pgRegistrarComida pg = new pgRegistrarComida();
-      showPanel(pg);
+      // pgRegistrarComida pg = new pgRegistrarComida();
+      // showPanel(pg);
     }//GEN-LAST:event_comidaRegistrarActionPerformed
 
     private void empleadoRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadoRegistrarActionPerformed
-      pgRegistrarEmpleados pg = new pgRegistrarEmpleados();
+      pgRegistrarEmpleado pg = new pgRegistrarEmpleado();
       showPanel(pg);
     }//GEN-LAST:event_empleadoRegistrarActionPerformed
 
     private void empleadoVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadoVerActionPerformed
-      pgVerEmpleados pg = new pgVerEmpleados();
+      pgVerEmpleado pg = new pgVerEmpleado();
       showPanel(pg);
     }//GEN-LAST:event_empleadoVerActionPerformed
 
@@ -176,18 +178,18 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutActionPerformed
 
     private void bebidasRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasRegistrarActionPerformed
-      pgRegistrarBebidas pg = new pgRegistrarBebidas();
-      showPanel(pg);
+      // pgRegistrarBebidas pg = new pgRegistrarBebidas();
+      // showPanel(pg);
     }//GEN-LAST:event_bebidasRegistrarActionPerformed
 
     private void bebidasVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasVerActionPerformed
-      pgVerBebidas pg = new pgVerBebidas();
-      showPanel(pg);
+      // pgVerBebidas pg = new pgVerBebidas();
+      // showPanel(pg);
     }//GEN-LAST:event_bebidasVerActionPerformed
 
     private void comidaVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comidaVerActionPerformed
-      pgVerComida pg = new pgVerComida();
-      showPanel(pg);
+      // pgVerComida pg = new pgVerComida();
+      // showPanel(pg);
     }//GEN-LAST:event_comidaVerActionPerformed
 
     /**

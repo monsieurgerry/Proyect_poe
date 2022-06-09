@@ -113,7 +113,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(27, 31, 37));
         btnBeer.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(204, 204, 204));
-        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
         btnBeer.setText("   Cervezas");
         btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -144,7 +144,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut.setBackground(new java.awt.Color(27, 31, 37));
         btnOut.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnOut.setForeground(new java.awt.Color(204, 204, 204));
-        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png")); // NOI18N
+        btnOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/out.png"))); // NOI18N
         btnOut.setText("   Salir");
         btnOut.setBorderPainted(false);
         btnOut.setContentAreaFilled(false);
@@ -164,25 +164,26 @@ public class ClienteMenu extends javax.swing.JFrame {
             .addComponent(btnFood, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(toggleMenuLayout.createSequentialGroup()
                 .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBeer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnWine, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                    .addComponent(btnBeer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
                     .addGroup(toggleMenuLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                            .addComponent(btnOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         toggleMenuLayout.setVerticalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(toggleMenuLayout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(btnBeer, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
-                .addComponent(btnWine)
-                .addGap(52, 52, 52)
-                .addComponent(btnFood)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
+                .addComponent(btnBeer, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(btnWine, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(btnFood, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
                 .addComponent(btnOut)
-                .addGap(38, 38, 38))
+                .addGap(42, 42, 42))
         );
 
         Background.add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 690));
