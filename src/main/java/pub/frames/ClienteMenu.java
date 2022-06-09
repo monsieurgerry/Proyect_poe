@@ -96,9 +96,10 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setBackground(new java.awt.Color(27, 31, 37));
         btnFood.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnFood.setForeground(new java.awt.Color(204, 204, 204));
-        btnFood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/burger.png"))); // NOI18N
+        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/burger.png")); // NOI18N
         btnFood.setText("  Comidas");
         btnFood.setBorderPainted(false);
+        btnFood.setContentAreaFilled(false);
         btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFood.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnFood.setVerifyInputWhenFocusTarget(false);
@@ -111,9 +112,9 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(27, 31, 37));
         btnBeer.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(204, 204, 204));
-        btnBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/beer.png")); // NOI18N
         btnBeer.setText("   Cervezas");
-        btnBeer.setBorderPainted(false);
+        btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBeer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnBeer.setVerifyInputWhenFocusTarget(false);
@@ -126,9 +127,10 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setBackground(new java.awt.Color(27, 31, 37));
         btnWine.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnWine.setForeground(new java.awt.Color(204, 204, 204));
-        btnWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
+        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/wine.png")); // NOI18N
         btnWine.setText("  Vinos & Licores");
         btnWine.setBorderPainted(false);
+        btnWine.setContentAreaFilled(false);
         btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnWine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnWine.setVerifyInputWhenFocusTarget(false);
@@ -143,12 +145,11 @@ public class ClienteMenu extends javax.swing.JFrame {
         toggleMenuLayout.setHorizontalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(toggleMenuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnBeer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFood, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE))
                 .addContainerGap())
+            .addComponent(btnFood, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         toggleMenuLayout.setVerticalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
