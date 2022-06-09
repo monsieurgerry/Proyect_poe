@@ -38,6 +38,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood = new javax.swing.JButton();
         btnBeer = new javax.swing.JButton();
         btnWine = new javax.swing.JButton();
+        btnOut = new javax.swing.JButton();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -96,7 +97,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setBackground(new java.awt.Color(27, 31, 37));
         btnFood.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnFood.setForeground(new java.awt.Color(204, 204, 204));
-        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/burger.png")); // NOI18N
+        btnFood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/burger.png"))); // NOI18N
         btnFood.setText("  Comidas");
         btnFood.setBorderPainted(false);
         btnFood.setContentAreaFilled(false);
@@ -112,7 +113,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(27, 31, 37));
         btnBeer.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(204, 204, 204));
-        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/beer.png")); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
         btnBeer.setText("   Cervezas");
         btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -127,7 +128,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setBackground(new java.awt.Color(27, 31, 37));
         btnWine.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnWine.setForeground(new java.awt.Color(204, 204, 204));
-        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/images/wine.png")); // NOI18N
+        btnWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
         btnWine.setText("  Vinos & Licores");
         btnWine.setBorderPainted(false);
         btnWine.setContentAreaFilled(false);
@@ -140,16 +141,35 @@ public class ClienteMenu extends javax.swing.JFrame {
             }
         });
 
+        btnOut.setBackground(new java.awt.Color(27, 31, 37));
+        btnOut.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
+        btnOut.setForeground(new java.awt.Color(204, 204, 204));
+        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png")); // NOI18N
+        btnOut.setText("   Salir");
+        btnOut.setBorderPainted(false);
+        btnOut.setContentAreaFilled(false);
+        btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnOut.setVerifyInputWhenFocusTarget(false);
+        btnOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOutActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout toggleMenuLayout = new javax.swing.GroupLayout(toggleMenu);
         toggleMenu.setLayout(toggleMenuLayout);
         toggleMenuLayout.setHorizontalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(toggleMenuLayout.createSequentialGroup()
-                .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnBeer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE))
-                .addContainerGap())
             .addComponent(btnFood, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(toggleMenuLayout.createSequentialGroup()
+                .addGroup(toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnBeer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnWine, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                    .addGroup(toggleMenuLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         toggleMenuLayout.setVerticalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +180,9 @@ public class ClienteMenu extends javax.swing.JFrame {
                 .addComponent(btnWine)
                 .addGap(52, 52, 52)
                 .addComponent(btnFood)
-                .addContainerGap(365, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
+                .addComponent(btnOut)
+                .addGap(38, 38, 38))
         );
 
         Background.add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 690));
@@ -200,6 +222,12 @@ public class ClienteMenu extends javax.swing.JFrame {
     private void btnWineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWineActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnWineActionPerformed
+
+    private void btnOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOutActionPerformed
+      Ingresar f = new Ingresar();
+      f.setVisible(true);
+      this.dispose();
+    }//GEN-LAST:event_btnOutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,6 +272,7 @@ public class ClienteMenu extends javax.swing.JFrame {
     private javax.swing.JPanel Cabeza;
     private javax.swing.JButton btnBeer;
     private javax.swing.JButton btnFood;
+    private javax.swing.JButton btnOut;
     private javax.swing.JButton btnWine;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel pubIcon;
