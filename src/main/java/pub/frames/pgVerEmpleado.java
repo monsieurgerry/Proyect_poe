@@ -33,7 +33,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SF Pro Text", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(188, 183, 174));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("ALUMNOS");
+        jLabel1.setText("Empleados");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1250, 110));
 
         bLimpiar.setBackground(new java.awt.Color(28, 51, 132));
@@ -72,24 +72,28 @@ public class pgVerEmpleado extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Nombre", "Apellido", "Grado", "Matricula"
+                "Nombre", "Apellido", "Puesto", "Edad", "Numero de Celular"
             }
         ));
         Table.setGridColor(new java.awt.Color(102, 102, 102));
         Table.setSelectionBackground(new java.awt.Color(27, 31, 37));
         Table.setSelectionForeground(new java.awt.Color(188, 183, 174));
         jScrollPane2.setViewportView(Table);
+        if (Table.getColumnModel().getColumnCount() > 0) {
+            Table.getColumnModel().getColumn(3).setMinWidth(65);
+            Table.getColumnModel().getColumn(3).setMaxWidth(65);
+        }
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 1070, 230));
     }// </editor-fold>//GEN-END:initComponents
 
     private void bLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLimpiarActionPerformed
-      // Datos.setText("");
+      // tabla.setText("");
     }//GEN-LAST:event_bLimpiarActionPerformed
 
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
-      pgInicio pg = new pgInicio();
-      EmpleadoMenu.showPanel(pg);
+      // pgInicio pg = new pgInicio();
+      // EmpleadoMenu.showPanel(pg);
       this.setVisible(false);
     }//GEN-LAST:event_bVolverActionPerformed
 

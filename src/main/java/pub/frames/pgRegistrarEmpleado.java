@@ -1,3 +1,4 @@
+// TODO: integer de celular es muy largo, adaptarlo con -- Long --
 package pub.frames;
 
 import pub.Empleados;
@@ -112,8 +113,8 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         Mensaje = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        imWaiter = new javax.swing.JLabel();
+        imQuestion = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(27, 31, 37));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -239,23 +240,24 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 530, 10));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 720, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/waiter.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 420, 350));
+        imWaiter.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/waiter.png")); // NOI18N
+        add(imWaiter, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 420, 350));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/questionMark.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 60, 70, 110));
+        imQuestion.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/questionMark.png")); // NOI18N
+        add(imQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 60, 70, 110));
     }// </editor-fold>//GEN-END:initComponents
 
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
       bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
-      pgInicio pg = new pgInicio();
-      EmpleadoMenu.showPanel(pg);
+      // pgInicio pg = new pgInicio();
+      // EmpleadoMenu.showPanel(pg);
       this.setVisible(false);
     }//GEN-LAST:event_bVolverActionPerformed
 
     private void bRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRegistrarActionPerformed
       bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
-      pila.push(jtfNombre.getText(),jtfApellido.getText(),jtfPuesto.getText(),Integer.parseInt(jtfEdad.getText()),Integer.parseInt(jtfNumCel.getText()));
+      pila.push(jtfNombre.getText(),jtfApellido.getText(),jtfPuesto.getText(),
+              Integer.parseInt(jtfEdad.getText()),Integer.parseInt(jtfNumCel.getText()));
       Mensaje.setForeground(new java.awt.Color(39,237,33));
       Mensaje.setText("Empleado registrado satisfactoriamente");
       pila.recorrer();
@@ -275,8 +277,8 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
     private javax.swing.JButton bEliminar;
     private javax.swing.JButton bRegistrar;
     private javax.swing.JButton bVolver;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel imQuestion;
+    private javax.swing.JLabel imWaiter;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
