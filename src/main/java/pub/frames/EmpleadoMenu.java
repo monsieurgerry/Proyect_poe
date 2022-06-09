@@ -17,8 +17,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
   public EmpleadoMenu() {
     initComponents();
     setLocationRelativeTo(null);
-    // pgInicio inicio = new pgInicio();
-    // showPanel(inicio);
+    pgInicio inicio = new pgInicio();
+    showPanel(inicio);
   }
 
     /**
@@ -52,6 +52,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
         setResizable(false);
 
         Background.setBackground(new java.awt.Color(27, 31, 37));
+        Background.setPreferredSize(new java.awt.Dimension(1200, 720));
 
         javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);
         Background.setLayout(BackgroundLayout);
@@ -146,11 +147,11 @@ public class EmpleadoMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 1352, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 721, Short.MAX_VALUE)
         );
 
         pack();
@@ -178,8 +179,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutActionPerformed
 
     private void bebidasRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasRegistrarActionPerformed
-      // pgRegistrarBebidas pg = new pgRegistrarBebidas();
-      // showPanel(pg);
+      pgRegistrarBebida pg = new pgRegistrarBebida();
+      showPanel(pg);
     }//GEN-LAST:event_bebidasRegistrarActionPerformed
 
     private void bebidasVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasVerActionPerformed

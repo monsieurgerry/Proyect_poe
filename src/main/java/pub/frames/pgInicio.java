@@ -29,6 +29,7 @@ public class pgInicio extends javax.swing.JPanel {
         txtWelcome1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(27, 31, 37));
+        setPreferredSize(new java.awt.Dimension(1196, 715));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtWelcome1.setBackground(new java.awt.Color(0, 0, 0));

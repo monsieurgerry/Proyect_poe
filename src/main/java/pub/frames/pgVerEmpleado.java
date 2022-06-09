@@ -22,7 +22,6 @@ public class pgVerEmpleado extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        bLimpiar = new javax.swing.JButton();
         bVolver = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
@@ -36,19 +35,6 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         jLabel1.setText("Empleados");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1250, 110));
 
-        bLimpiar.setBackground(new java.awt.Color(28, 51, 132));
-        bLimpiar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
-        bLimpiar.setForeground(new java.awt.Color(255, 255, 255));
-        bLimpiar.setText("LIMPIAR");
-        bLimpiar.setBorder(null);
-        bLimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bLimpiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bLimpiarActionPerformed(evt);
-            }
-        });
-        add(bLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 600, 200, 40));
-
         bVolver.setBackground(new java.awt.Color(28, 51, 132));
         bVolver.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVolver.setForeground(new java.awt.Color(255, 255, 255));
@@ -60,7 +46,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
                 bVolverActionPerformed(evt);
             }
         });
-        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 600, 200, 40));
+        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 200, 40));
 
         jScrollPane2.setBackground(new java.awt.Color(27, 31, 37));
 
@@ -87,10 +73,6 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 1070, 230));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLimpiarActionPerformed
-      // tabla.setText("");
-    }//GEN-LAST:event_bLimpiarActionPerformed
-
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
       // pgInicio pg = new pgInicio();
       // EmpleadoMenu.showPanel(pg);
@@ -100,7 +82,6 @@ public class pgVerEmpleado extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JTable Table;
-    private javax.swing.JButton bLimpiar;
     private javax.swing.JButton bVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;

@@ -4,7 +4,7 @@ package pub.frames;
 import pub.Empleados;
 import javax.swing.table.DefaultTableModel;
 
-public class pgRegistrarEmpleado extends javax.swing.JPanel {
+public class pgRegistrarBebida extends javax.swing.JPanel {
 
   public static class Pila {
     Empleados pila;
@@ -80,7 +80,7 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
   }
 
   public static Pila pila = new Pila();
-  public pgRegistrarEmpleado() {
+  public pgRegistrarBebida() {
     initComponents();
   }
 

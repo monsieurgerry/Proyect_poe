@@ -5,14 +5,14 @@ import javax.swing.JPanel;
 
 public class ClienteMenu extends javax.swing.JFrame {
 
-  // public static void showPanel(JPanel pg) {
-  //   pg.setSize(1200,720);
-  //   pg.setLocation(0,0);
-  //   Background.removeAll();
-  //   Background.add(pg, BorderLayout.CENTER);
-  //   Background.revalidate();
-  //   Background.repaint();
-  // }
+    public static void showPg(JPanel pg) {
+    pg.setSize(580,700);
+    pg.setLocation(0,0);
+    Content.removeAll();
+    Content.add(pg, BorderLayout.CENTER);
+    Content.revalidate();
+    Content.repaint();
+  }
 
   public ClienteMenu() {
     initComponents();
@@ -30,7 +30,6 @@ public class ClienteMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
-        Background = new javax.swing.JPanel();
         Cabeza = new javax.swing.JPanel();
         pubIcon = new javax.swing.JLabel();
         toggleButton = new javax.swing.JToggleButton();
@@ -39,15 +38,15 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer = new javax.swing.JButton();
         btnWine = new javax.swing.JButton();
         btnOut = new javax.swing.JButton();
+        Content = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
-
-        Background.setBackground(new java.awt.Color(27, 31, 37));
-        Background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Cabeza.setBackground(new java.awt.Color(19, 119, 180));
 
@@ -76,7 +75,7 @@ public class ClienteMenu extends javax.swing.JFrame {
             .addGroup(CabezaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(toggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 428, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(pubIcon)
                 .addGap(14, 14, 14))
         );
@@ -87,10 +86,10 @@ public class ClienteMenu extends javax.swing.JFrame {
                 .addGroup(CabezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pubIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(toggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        Background.add(Cabeza, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 50));
+        getContentPane().add(Cabeza, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 50));
 
         toggleMenu.setBackground(new java.awt.Color(19, 119, 180));
 
@@ -181,23 +180,38 @@ public class ClienteMenu extends javax.swing.JFrame {
                 .addComponent(btnWine, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(btnFood, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 284, Short.MAX_VALUE)
                 .addComponent(btnOut)
                 .addGap(42, 42, 42))
         );
 
-        Background.add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 690));
+        getContentPane().add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, 700));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        Content.setBackground(new java.awt.Color(27, 31, 37));
+
+        jLabel1.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(73, 168, 245));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Welcome");
+
+        javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
+        Content.setLayout(ContentLayout);
+        ContentLayout.setHorizontalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ContentLayout.createSequentialGroup()
+                .addGap(123, 123, 123)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(147, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        ContentLayout.setVerticalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ContentLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(582, Short.MAX_VALUE))
         );
+
+        getContentPane().add(Content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 48, 580, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -207,18 +221,9 @@ public class ClienteMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFoodActionPerformed
 
     private void btnBeerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBeerActionPerformed
-        // TODO add your handling code here:
+        pgClientBeer pg = new pgClientBeer();
+        showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
-
-    private void toggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleButtonActionPerformed
-        if (toggleButton.isSelected()) {
-            toggleButton.setText("x");
-            toggleMenu.setVisible(true);
-        } else {
-            toggleButton.setText("");
-            toggleMenu.setVisible(false);
-        }
-    }//GEN-LAST:event_toggleButtonActionPerformed
 
     private void btnWineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWineActionPerformed
         // TODO add your handling code here:
@@ -229,6 +234,16 @@ public class ClienteMenu extends javax.swing.JFrame {
       f.setVisible(true);
       this.dispose();
     }//GEN-LAST:event_btnOutActionPerformed
+
+    private void toggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleButtonActionPerformed
+        if (toggleButton.isSelected()) {
+            toggleButton.setText("x");
+            toggleMenu.setVisible(true);
+        } else {
+            toggleButton.setText("");
+            toggleMenu.setVisible(false);
+        }
+    }//GEN-LAST:event_toggleButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -269,12 +284,13 @@ public class ClienteMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JPanel Background;
     private javax.swing.JPanel Cabeza;
+    public static javax.swing.JPanel Content;
     private javax.swing.JButton btnBeer;
     private javax.swing.JButton btnFood;
     private javax.swing.JButton btnOut;
     private javax.swing.JButton btnWine;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel pubIcon;
     private javax.swing.JToggleButton toggleButton;
