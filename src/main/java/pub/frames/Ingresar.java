@@ -225,7 +225,7 @@ public class Ingresar extends javax.swing.JFrame {
         String Pass = new String(jpPass.getPassword());
         pila.search(jtUsuario.getText(), Pass);
         if (pila.find == true) {
-            if (jtUsuario.getText().equals("mesa")) {
+            if (jtUsuario.getText().equals("cliente")) {
                 jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
                 ClienteMenu menu = new ClienteMenu();
                 menu.setVisible(true);
