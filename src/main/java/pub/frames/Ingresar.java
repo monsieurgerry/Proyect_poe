@@ -57,7 +57,7 @@ public class Ingresar extends javax.swing.JFrame {
     pila.push("gerardo", "123");
     pila.push("david", "123");
     pila.push("nahomy", "123");
-    pila.push("cliente", "cliente");
+    pila.push("cliente", "1");
     pila.push("admin", "admin");
   }
 

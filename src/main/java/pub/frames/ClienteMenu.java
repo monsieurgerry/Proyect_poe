@@ -222,6 +222,8 @@ public class ClienteMenu extends javax.swing.JFrame {
 
     private void btnBeerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBeerActionPerformed
         pgClientBeer pg = new pgClientBeer();
+        toggleMenu.setVisible(false);
+        toggleButton.setText("");
         showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
 
