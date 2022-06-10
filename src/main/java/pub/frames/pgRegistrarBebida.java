@@ -136,28 +136,26 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
     public int getNodes() { return cantNodos; }
     public void setNodes(int cantNodos) { this.cantNodos=cantNodos; }
 
-    public int getStock(String name) {
+    public int getBeerStock(String name) {
         Cerveza aux = beer;
         while (aux.getNext() != null) {
-            if (name.contains(aux.getNombre())) {
+            if (name.equals(aux.getNombre())) {
                 beerStock = aux.getCantidad();
-                break;
             }
+            aux = aux.getNext();
         }
-        aux = aux.getNext();
         return beerStock;
     }
 
-    public void setStock(int beerStock, String name) {
+    public void setBeerStock(int beerStock, String name) {
         this.beerStock = beerStock;
         Cerveza aux = beer;
         while (aux.getNext() != null) {
-            if (name.contains(aux.getNombre())) {
+            if (name.equals(aux.getNombre())) {
                 aux.setCantidad(beerStock);
-                break;
             }
+            aux = aux.getNext();
         }
-        aux = aux.getNext();
     }
   }
 
@@ -302,10 +300,10 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         });
         add(jrbBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 110, 30));
 
-        imgWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
+        imgWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
         add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, 40, 60));
 
-        imgBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
+        imgBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
         add(imgBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 50, 60));
 
         beerPanel.setBackground(new java.awt.Color(27, 31, 37));

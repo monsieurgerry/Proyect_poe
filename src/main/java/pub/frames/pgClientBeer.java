@@ -5,7 +5,7 @@ import pub.frames.pgRegistrarBebida;
 public class pgClientBeer extends javax.swing.JPanel {
 
     public static int[] contador = new int[6];
-    public static String[] beerName = {
+    public String[] beerName = {
         "Corona",
         "Victoria",
         "Pacifico",
@@ -76,12 +76,12 @@ public class pgClientBeer extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         img.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_corona.png"))); // NOI18N
+        img.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_corona.png")); // NOI18N
         add(img, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 50, 150));
 
         btnMinus.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus.setText("");
         btnMinus.setBorder(null);
         btnMinus.setBorderPainted(false);
@@ -89,7 +89,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus.setFocusPainted(false);
         btnMinus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinusActionPerformed(evt);
@@ -99,7 +99,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus.setText("");
         btnPlus.setBorder(null);
         btnPlus.setBorderPainted(false);
@@ -107,7 +107,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus.setFocusPainted(false);
         btnPlus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlusActionPerformed(evt);
@@ -121,7 +121,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 100, -1));
 
         img1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_victoria.png"))); // NOI18N
+        img1.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_victoria.png")); // NOI18N
         add(img1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 50, 150));
 
         txtName1.setForeground(new java.awt.Color(204, 204, 204));
@@ -142,7 +142,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         add(txtContador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 30, 15));
 
         img2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_pacifico.png"))); // NOI18N
+        img2.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_pacifico.png")); // NOI18N
         add(img2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 50, 150));
 
         txtName2.setForeground(new java.awt.Color(204, 204, 204));
@@ -157,7 +157,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         add(txtContador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 30, 15));
 
         img3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_modelo.png"))); // NOI18N
+        img3.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_modelo.png")); // NOI18N
         add(img3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 60, 150));
 
         txtName3.setForeground(new java.awt.Color(204, 204, 204));
@@ -166,7 +166,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         add(txtName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 510, 100, -1));
 
         img4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_miller.png"))); // NOI18N
+        img4.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_miller.png")); // NOI18N
         add(img4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 50, 150));
 
         txtName4.setForeground(new java.awt.Color(204, 204, 204));
@@ -187,7 +187,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         add(txtContador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 30, 15));
 
         img5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_heineken.png"))); // NOI18N
+        img5.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_heineken.png")); // NOI18N
         add(img5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 50, 150));
 
         txtName5.setForeground(new java.awt.Color(204, 204, 204));
@@ -209,7 +209,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnMinus1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus1.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus1.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus1.setText("");
         btnMinus1.setBorder(null);
         btnMinus1.setBorderPainted(false);
@@ -217,7 +217,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus1.setFocusPainted(false);
         btnMinus1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus1.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinus1ActionPerformed(evt);
@@ -227,7 +227,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus1.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus1.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus1.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus1.setText("");
         btnPlus1.setBorder(null);
         btnPlus1.setBorderPainted(false);
@@ -235,7 +235,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus1.setFocusPainted(false);
         btnPlus1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus1.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlus1ActionPerformed(evt);
@@ -245,7 +245,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnMinus2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus2.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus2.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus2.setText("");
         btnMinus2.setBorder(null);
         btnMinus2.setBorderPainted(false);
@@ -253,7 +253,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus2.setFocusPainted(false);
         btnMinus2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus2.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinus2ActionPerformed(evt);
@@ -263,7 +263,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus2.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus2.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus2.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus2.setText("");
         btnPlus2.setBorder(null);
         btnPlus2.setBorderPainted(false);
@@ -271,7 +271,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus2.setFocusPainted(false);
         btnPlus2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus2.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlus2ActionPerformed(evt);
@@ -281,7 +281,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnMinus3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus3.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus3.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus3.setText("");
         btnMinus3.setBorder(null);
         btnMinus3.setBorderPainted(false);
@@ -289,7 +289,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus3.setFocusPainted(false);
         btnMinus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus3.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinus3ActionPerformed(evt);
@@ -299,7 +299,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus3.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus3.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus3.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus3.setText("");
         btnPlus3.setBorder(null);
         btnPlus3.setBorderPainted(false);
@@ -307,7 +307,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus3.setFocusPainted(false);
         btnPlus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus3.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlus3ActionPerformed(evt);
@@ -317,7 +317,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnMinus4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus4.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus4.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus4.setText("");
         btnMinus4.setBorder(null);
         btnMinus4.setBorderPainted(false);
@@ -325,7 +325,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus4.setFocusPainted(false);
         btnMinus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus4.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinus4ActionPerformed(evt);
@@ -335,7 +335,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus4.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus4.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus4.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus4.setText("");
         btnPlus4.setBorder(null);
         btnPlus4.setBorderPainted(false);
@@ -343,7 +343,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus4.setFocusPainted(false);
         btnPlus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus4.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlus4ActionPerformed(evt);
@@ -353,7 +353,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnMinus5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus5.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnMinus5.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnMinus5.setText("");
         btnMinus5.setBorder(null);
         btnMinus5.setBorderPainted(false);
@@ -361,7 +361,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMinus5.setFocusPainted(false);
         btnMinus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnMinus5.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnMinus5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMinus5ActionPerformed(evt);
@@ -371,7 +371,7 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         btnPlus5.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus5.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1.png"))); // NOI18N
+        btnPlus5.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1.png")); // NOI18N
         btnPlus5.setText("");
         btnPlus5.setBorder(null);
         btnPlus5.setBorderPainted(false);
@@ -379,7 +379,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPlus5.setFocusPainted(false);
         btnPlus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
+        btnPlus5.setPressedIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_pressed.png")); // NOI18N
         btnPlus5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlus5ActionPerformed(evt);
@@ -487,10 +487,14 @@ public class pgClientBeer extends javax.swing.JPanel {
         for (int i=0; i<contador.length; i++) {
             if (contador[i] > 0) {
                 name = beerName[i];
+                stock = pgRegistrarBebida.bebida.getBeerStock(name);
+                System.out.println(stock);
                 dismunirStock = stock-contador[i];
+                System.out.println(name+dismunirStock);
             }
         }
-        pgRegistrarBebida.bebida.setStock(dismunirStock, name);
+        pgRegistrarBebida.bebida.setBeerStock(dismunirStock, name);
+        pgRegistrarBebida.bebida.getBeerStock(name);
         limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
         Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed

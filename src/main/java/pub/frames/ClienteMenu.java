@@ -96,7 +96,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setBackground(new java.awt.Color(19, 119, 180));
         btnFood.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnFood.setForeground(new java.awt.Color(204, 204, 204));
-        btnFood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/burger.png"))); // NOI18N
+        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/burger.png")); // NOI18N
         btnFood.setText("Comidas");
         btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFood.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -111,7 +111,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(19, 119, 180));
         btnBeer.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(204, 204, 204));
-        btnBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
         btnBeer.setText("Cervezas");
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBeer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -126,7 +126,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setBackground(new java.awt.Color(19, 119, 180));
         btnWine.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnWine.setForeground(new java.awt.Color(204, 204, 204));
-        btnWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
+        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
         btnWine.setText("Vinos & Licores");
         btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnWine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -141,7 +141,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut.setBackground(new java.awt.Color(19, 119, 180));
         btnOut.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
         btnOut.setForeground(new java.awt.Color(204, 204, 204));
-        btnOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/out.png"))); // NOI18N
+        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png")); // NOI18N
         btnOut.setText("Salir");
         btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

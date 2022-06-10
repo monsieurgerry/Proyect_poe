@@ -149,7 +149,7 @@ public class Ingresar extends javax.swing.JFrame {
 
         Mensaje.setFont(new java.awt.Font("FreeSans", 0, 10)); // NOI18N
 
-        iconLog.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login.png"))); // NOI18N
+        iconLog.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/login.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -260,6 +260,7 @@ public class Ingresar extends javax.swing.JFrame {
     public static void main(String args[]) {
         pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
         pgRegistrarBebida.bebida.pushBeer("Victoria", "Grupo Modelo", 150, 355, (float)4, "Ambar", true);
+        pgRegistrarBebida.bebida.pushBeer("Modelo", "Grupo Modelo", 70, 355, (float)4.5, "American Pilsener", false);
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
