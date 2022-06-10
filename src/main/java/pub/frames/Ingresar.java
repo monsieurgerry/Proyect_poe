@@ -258,6 +258,7 @@ public class Ingresar extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        pgRegistrarBebida.bebida.pushBeer("test", "test", 0, 0, (float)0.0, "", false);
         pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
         pgRegistrarBebida.bebida.pushBeer("Victoria", "Grupo Modelo", 150, 355, (float)4, "Ambar", true);
         pgRegistrarBebida.bebida.pushBeer("Modelo", "Grupo Modelo", 70, 355, (float)4.5, "American Pilsener", false);
