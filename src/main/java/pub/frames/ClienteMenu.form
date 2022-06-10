@@ -63,12 +63,12 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="pubIcon" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="toggleButton" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="toggleButton" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="pubIcon" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="8" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -93,7 +93,9 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&#xf85b;"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png"/>
+            </Property>
             <Property name="actionCommand" type="java.lang.String" value="x"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -126,10 +128,17 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="btnFood" max="32767" attributes="0"/>
-              <Component id="btnWine" alignment="0" max="32767" attributes="0"/>
-              <Component id="btnOut" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Component id="btnOut" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnWine" max="32767" attributes="0"/>
+              </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="btnBeer" min="-2" pref="580" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnBeer" min="-2" pref="574" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -145,7 +154,7 @@
                   <Component id="btnFood" min="-2" pref="65" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnOut" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="9" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -163,7 +172,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/burger.png"/>
+              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_hamburger.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Comidas"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -172,7 +181,7 @@
               <Color id="Hand Cursor"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="iconTextGap" type="int" value="10"/>
+            <Property name="iconTextGap" type="int" value="18"/>
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -193,7 +202,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png"/>
+              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_beer.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cervezas"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -202,7 +211,7 @@
             </Property>
             <Property name="defaultCapable" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="iconTextGap" type="int" value="10"/>
+            <Property name="iconTextGap" type="int" value="15"/>
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -223,7 +232,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png"/>
+              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_wine.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Vinos &amp; Licores"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -232,7 +241,7 @@
               <Color id="Hand Cursor"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="iconTextGap" type="int" value="22"/>
+            <Property name="iconTextGap" type="int" value="12"/>
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -253,7 +262,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png"/>
+              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_logout.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -262,7 +271,7 @@
               <Color id="Hand Cursor"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="iconTextGap" type="int" value="20"/>
+            <Property name="iconTextGap" type="int" value="15"/>
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <Events>

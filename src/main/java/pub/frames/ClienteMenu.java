@@ -56,7 +56,7 @@ public class ClienteMenu extends javax.swing.JFrame {
 
         toggleButton.setFont(new java.awt.Font("JetBrainsMono Nerd Font Mono", 0, 48)); // NOI18N
         toggleButton.setForeground(new java.awt.Color(255, 255, 255));
-        toggleButton.setText("");
+        toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
         toggleButton.setActionCommand("x");
         toggleButton.setBorder(null);
         toggleButton.setBorderPainted(false);
@@ -82,11 +82,11 @@ public class ClienteMenu extends javax.swing.JFrame {
         CabezaLayout.setVerticalGroup(
             CabezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CabezaLayout.createSequentialGroup()
-                .addGap(7, 7, 7)
-                .addGroup(CabezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pubIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(toggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(CabezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(toggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pubIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(Cabeza, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 50));
@@ -96,13 +96,13 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setBackground(new java.awt.Color(19, 119, 180));
         btnFood.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnFood.setForeground(new java.awt.Color(153, 201, 219));
-        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/burger.png")); // NOI18N
+        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_hamburger.png")); // NOI18N
         btnFood.setText("Comidas");
         btnFood.setBorderPainted(false);
         btnFood.setContentAreaFilled(false);
         btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFood.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnFood.setIconTextGap(10);
+        btnFood.setIconTextGap(18);
         btnFood.setVerifyInputWhenFocusTarget(false);
         btnFood.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -121,13 +121,13 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(19, 119, 180));
         btnBeer.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(153, 201, 219));
-        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_beer.png")); // NOI18N
         btnBeer.setText("Cervezas");
         btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBeer.setDefaultCapable(false);
         btnBeer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnBeer.setIconTextGap(10);
+        btnBeer.setIconTextGap(15);
         btnBeer.setVerifyInputWhenFocusTarget(false);
         btnBeer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -146,13 +146,13 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setBackground(new java.awt.Color(19, 119, 180));
         btnWine.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnWine.setForeground(new java.awt.Color(153, 201, 219));
-        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
+        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_wine.png")); // NOI18N
         btnWine.setText("Vinos & Licores");
         btnWine.setBorderPainted(false);
         btnWine.setContentAreaFilled(false);
         btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnWine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnWine.setIconTextGap(22);
+        btnWine.setIconTextGap(12);
         btnWine.setVerifyInputWhenFocusTarget(false);
         btnWine.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -171,13 +171,13 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut.setBackground(new java.awt.Color(19, 119, 180));
         btnOut.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnOut.setForeground(new java.awt.Color(153, 201, 219));
-        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png")); // NOI18N
+        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_logout.png")); // NOI18N
         btnOut.setText("Salir");
         btnOut.setBorderPainted(false);
         btnOut.setContentAreaFilled(false);
         btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnOut.setIconTextGap(20);
+        btnOut.setIconTextGap(15);
         btnOut.setVerifyInputWhenFocusTarget(false);
         btnOut.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -198,10 +198,15 @@ public class ClienteMenu extends javax.swing.JFrame {
         toggleMenuLayout.setHorizontalGroup(
             toggleMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnFood, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(toggleMenuLayout.createSequentialGroup()
-                .addComponent(btnBeer, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(btnOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, toggleMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnWine, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(toggleMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnBeer, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         toggleMenuLayout.setVerticalGroup(
@@ -215,7 +220,7 @@ public class ClienteMenu extends javax.swing.JFrame {
                 .addComponent(btnFood, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnOut)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 580, 300));
@@ -257,7 +262,8 @@ public class ClienteMenu extends javax.swing.JFrame {
         pgClientBeer pg = new pgClientBeer();
         toggleMenu.setVisible(false);
         toggleButton.setSelected(false);
-        toggleButton.setText("");
+        // toggleButton.setText("");
+        toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
         Cabeza.setBackground(new java.awt.Color(27,31,37));
         showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
@@ -274,11 +280,13 @@ public class ClienteMenu extends javax.swing.JFrame {
 
     private void toggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleButtonActionPerformed
         if (toggleButton.isSelected()) {
-            toggleButton.setText("x");
+            // toggleButton.setText("x");
+            toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_up.png")); // NOI18N
             Cabeza.setBackground(new java.awt.Color(11,73,110));
             toggleMenu.setVisible(true);
         } else {
-            toggleButton.setText("");
+            // toggleButton.setText("");
+            toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
             Cabeza.setBackground(new java.awt.Color(27,31,37));
             toggleMenu.setVisible(false);
         }
