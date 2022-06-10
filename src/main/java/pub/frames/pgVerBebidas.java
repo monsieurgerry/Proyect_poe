@@ -6,8 +6,8 @@ public class pgVerBebidas extends javax.swing.JPanel {
 
     public pgVerBebidas() {
         initComponents();
-        pgRegistrarBebida.bebida.printBeer();
-        pgRegistrarBebida.bebida.printWine();
+        pgRegistrarBebida.beer.printBeer();
+        pgRegistrarBebida.wine.printWine();
     }
 
     @SuppressWarnings("unchecked")

@@ -487,14 +487,14 @@ public class pgClientBeer extends javax.swing.JPanel {
         for (int i=0; i<contador.length; i++) {
             if (contador[i] > 0) {
                 name = beerName[i];
-                stock = pgRegistrarBebida.bebida.getBeerStock(name);
+                stock = pgRegistrarBebida.beer.getBeerStock(name);
                 System.out.println(stock);
                 dismunirStock = stock-contador[i];
                 System.out.println(name+dismunirStock);
             }
         }
-        pgRegistrarBebida.bebida.setBeerStock(dismunirStock, name);
-        pgRegistrarBebida.bebida.getBeerStock(name);
+        pgRegistrarBebida.beer.setBeerStock(dismunirStock, name);
+        pgRegistrarBebida.beer.getBeerStock(name);
         limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
         Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed

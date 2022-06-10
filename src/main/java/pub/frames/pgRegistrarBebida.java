@@ -6,160 +6,8 @@ import javax.swing.table.DefaultTableModel;
 
 public class pgRegistrarBebida extends javax.swing.JPanel {
 
-  public static class Pila {
-
-    int beerStock;
-    String envace;
-    boolean find = false;
-
-    Cerveza beer;
-    VinosLicores wine;
-    private int cantNodos;
-
-    public Pila() {
-      beer = null;
-      wine = null;
-      cantNodos=0;
-    }
-
-    public void pushBeer(String n, String m, int c, int t, float a, String s, boolean e) { // Agregar cervezas
-      Cerveza nuevo = new Cerveza();
-      nuevo.setNombre(n);
-      nuevo.setMarca(m);
-      nuevo.setCantidad(c);
-      nuevo.setTamano(t);
-      nuevo.setAlcohol(a);
-      nuevo.setEstilo(s);
-      nuevo.setEnvace(e);
-      if (beer == null) {
-        beer = nuevo;
-      } else {
-        Cerveza aux = beer;
-        beer = nuevo;
-        nuevo.setNext(aux);
-      }
-      cantNodos++;
-    } //push
-
-    public String[] printBeer() { // Agregar cervezas a Tabla
-      Cerveza aux = beer;
-      String[] data = new String[100];
-      if (beer == null) {
-        System.out.println("No existen cervezas registradas");
-      } else {
-        while (aux != null) {
-            if (aux.necesitaEnvace() == true) {
-                envace = "si";
-            } else {
-                envace = "no";
-            }
-            data = new String[]{aux.getNombre(),aux.getMarca(),Integer.toString(aux.getCantidad()),
-                Integer.toString(aux.getTamano()),Float.toString(aux.getAlcohol()),aux.getEstilo(),
-                envace};
-
-            DefaultTableModel tabla = (DefaultTableModel)pgVerBebidas.beerTable.getModel();
-            tabla.addRow(data);
-            aux = aux.getNext(); // Avanzar al sig nodo
-
-        }
-      }
-      return data;
-    } //recorrer
-
-    public void popBeer() { // Eliminar cervezas
-      Cerveza aux = beer;
-      if (beer == null) {
-        System.out.println("No existen cervezas registradas");
-      } else {
-        if (aux.getNext() == null) { // Si el siguiente es null solo hay 1
-          beer = null;
-        } else {
-          beer = aux.getNext(); // Sino se elimina el primero
-        }
-      }
-      cantNodos--;
-    }
-
-    public void pushWine(String n, String m, int c, int t, float a, String b, String o) { // Agregar botellas
-      VinosLicores nuevo = new VinosLicores();
-      nuevo.setNombre(n);
-      nuevo.setMarca(m);
-      nuevo.setCantidad(c);
-      nuevo.setTamano(t);
-      nuevo.setAlcohol(a);
-      nuevo.setTipoBotella(b);
-      nuevo.setOrigen(o);
-      if (wine == null) {
-        wine = nuevo;
-      } else {
-        VinosLicores aux = wine;
-        wine = nuevo;
-        nuevo.setNext(aux);
-      }
-      cantNodos++;
-    } //push
-
-    public String[] printWine() { // Agregar botellas a tabla
-      VinosLicores aux = wine;
-      String[] data = new String[100];
-      if (wine == null) {
-        System.out.println("No existen botellas registradas");
-      } else {
-        while (aux != null) {
-            data = new String[]{aux.getNombre(),aux.getMarca(),Integer.toString(aux.getCantidad()),
-                Integer.toString(aux.getTamano()),Float.toString(aux.getAlcohol()),aux.getTipoBotella(),
-                aux.getOrigen()};
-
-            DefaultTableModel tabla = (DefaultTableModel)pgVerBebidas.wineTable.getModel();
-            tabla.addRow(data);
-            aux = aux.getNext(); // Avanzar al sig nodo
-
-        }
-      }
-      return data;
-    } //recorrer
-
-    public void popWine() { // Eliminar primera botella en pila
-      VinosLicores aux = wine;
-      if (wine == null) {
-        System.out.println("No existen botellas registradas");
-      } else {
-        if (aux.getNext() == null) { // Si el siguiente es null solo hay 1
-          wine = null;
-        } else {
-          wine = aux.getNext(); // Sino se elimina el primero
-        }
-      }
-      cantNodos--;
-    }
-
-    public int getNodes() { return cantNodos; }
-    public void setNodes(int cantNodos) { this.cantNodos=cantNodos; }
-
-    public int getBeerStock(String name) {
-        Cerveza aux = beer;
-        while (aux.getNext() != null) {
-            if (name.equals(aux.getNombre())) {
-                beerStock = aux.getCantidad();
-            }
-            aux = aux.getNext();
-        }
-        return beerStock;
-    }
-
-    public void setBeerStock(int beerStock, String name) {
-        this.beerStock = beerStock;
-        Cerveza aux = beer;
-        while (aux.getNext() != null) {
-            if (name.equals(aux.getNombre())) {
-                aux.setCantidad(beerStock);
-            }
-            aux = aux.getNext();
-        }
-    }
-  }
-
-    public static Pila bebida = new Pila();
+    public static Cerveza.Pila beer = new Cerveza.Pila();
+    public static VinosLicores.Pila wine = new VinosLicores.Pila();
     public pgRegistrarBebida() {
         initComponents();
         beerPanel.setVisible(false);
@@ -701,7 +549,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
     private void bRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRegistrarActionPerformed
         bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
         if (jrbBeer.isSelected()) {
-            bebida.pushBeer(beerName.getText(),beerMarca.getText(),Integer.parseInt(beerInventario.getText()),
+            beer.pushBeer(beerName.getText(),beerMarca.getText(),Integer.parseInt(beerInventario.getText()),
                         Integer.parseInt(beerLitros.getText()),Float.parseFloat(beerAlcohol.getText()),
                         beerEstilo.getText(),beerEnvace.isSelected());
 
@@ -709,7 +557,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
             Mensaje.setText("Cerveza registrada satisfactoriamente");
 
         } else if (jrbWine.isSelected()) {
-            bebida.pushWine(wineName.getText(),wineMarca.getText(),Integer.parseInt(wineInventario.getText()),
+            wine.pushWine(wineName.getText(),wineMarca.getText(),Integer.parseInt(wineInventario.getText()),
                         Integer.parseInt(wineLitros.getText()),Float.parseFloat(wineAlcohol.getText()),
                         wineTipo.getText(),wineOrigen.getText());
             Mensaje.setForeground(new java.awt.Color(39,237,33));
@@ -723,11 +571,11 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
     private void bEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEliminarActionPerformed
         bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
         if (jrbBeer.isSelected()) {
-            bebida.popBeer(); // Elimina la primera cerveza en la pila
+            beer.popBeer(); // Elimina la primera cerveza en la pila
             Mensaje.setForeground(new java.awt.Color(204, 0, 0));
             Mensaje.setText("Cerveza eliminada satisfactoriamente");
         } else if (jrbWine.isSelected()) { // Elimina la primera botella en la pila
-            bebida.popWine();
+            wine.popWine();
             Mensaje.setForeground(new java.awt.Color(39,237,33));
             Mensaje.setText("Botella eliminada satisfactoriamente");
         } else {
