@@ -48,7 +48,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Cabeza.setBackground(new java.awt.Color(19, 119, 180));
+        Cabeza.setBackground(new java.awt.Color(27, 31, 37));
 
         pubIcon.setFont(new java.awt.Font("JetBrainsMono Nerd Font Mono", 1, 48)); // NOI18N
         pubIcon.setForeground(new java.awt.Color(73, 168, 245));
@@ -91,17 +91,27 @@ public class ClienteMenu extends javax.swing.JFrame {
 
         getContentPane().add(Cabeza, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 50));
 
-        toggleMenu.setBackground(new java.awt.Color(19, 119, 180));
+        toggleMenu.setBackground(new java.awt.Color(11, 73, 110));
 
         btnFood.setBackground(new java.awt.Color(19, 119, 180));
-        btnFood.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
-        btnFood.setForeground(new java.awt.Color(204, 204, 204));
+        btnFood.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        btnFood.setForeground(new java.awt.Color(153, 201, 219));
         btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/burger.png")); // NOI18N
         btnFood.setText("Comidas");
+        btnFood.setBorderPainted(false);
+        btnFood.setContentAreaFilled(false);
         btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFood.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnFood.setIconTextGap(10);
         btnFood.setVerifyInputWhenFocusTarget(false);
+        btnFood.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnFoodMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnFoodMouseExited(evt);
+            }
+        });
         btnFood.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFoodActionPerformed(evt);
@@ -109,14 +119,24 @@ public class ClienteMenu extends javax.swing.JFrame {
         });
 
         btnBeer.setBackground(new java.awt.Color(19, 119, 180));
-        btnBeer.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
-        btnBeer.setForeground(new java.awt.Color(204, 204, 204));
+        btnBeer.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        btnBeer.setForeground(new java.awt.Color(153, 201, 219));
         btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
         btnBeer.setText("Cervezas");
+        btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBeer.setDefaultCapable(false);
         btnBeer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnBeer.setIconTextGap(10);
         btnBeer.setVerifyInputWhenFocusTarget(false);
+        btnBeer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBeerMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBeerMouseExited(evt);
+            }
+        });
         btnBeer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBeerActionPerformed(evt);
@@ -124,14 +144,24 @@ public class ClienteMenu extends javax.swing.JFrame {
         });
 
         btnWine.setBackground(new java.awt.Color(19, 119, 180));
-        btnWine.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
-        btnWine.setForeground(new java.awt.Color(204, 204, 204));
+        btnWine.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        btnWine.setForeground(new java.awt.Color(153, 201, 219));
         btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
         btnWine.setText("Vinos & Licores");
+        btnWine.setBorderPainted(false);
+        btnWine.setContentAreaFilled(false);
         btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnWine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnWine.setIconTextGap(22);
         btnWine.setVerifyInputWhenFocusTarget(false);
+        btnWine.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnWineMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnWineMouseExited(evt);
+            }
+        });
         btnWine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnWineActionPerformed(evt);
@@ -139,14 +169,24 @@ public class ClienteMenu extends javax.swing.JFrame {
         });
 
         btnOut.setBackground(new java.awt.Color(19, 119, 180));
-        btnOut.setFont(new java.awt.Font("SF Pro Text", 0, 16)); // NOI18N
-        btnOut.setForeground(new java.awt.Color(204, 204, 204));
+        btnOut.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        btnOut.setForeground(new java.awt.Color(153, 201, 219));
         btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/out.png")); // NOI18N
         btnOut.setText("Salir");
+        btnOut.setBorderPainted(false);
+        btnOut.setContentAreaFilled(false);
         btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnOut.setIconTextGap(20);
         btnOut.setVerifyInputWhenFocusTarget(false);
+        btnOut.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnOutMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnOutMouseExited(evt);
+            }
+        });
         btnOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOutActionPerformed(evt);
@@ -216,7 +256,9 @@ public class ClienteMenu extends javax.swing.JFrame {
     private void btnBeerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBeerActionPerformed
         pgClientBeer pg = new pgClientBeer();
         toggleMenu.setVisible(false);
+        toggleButton.setSelected(false);
         toggleButton.setText("");
+        Cabeza.setBackground(new java.awt.Color(27,31,37));
         showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
 
@@ -233,12 +275,46 @@ public class ClienteMenu extends javax.swing.JFrame {
     private void toggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleButtonActionPerformed
         if (toggleButton.isSelected()) {
             toggleButton.setText("x");
+            Cabeza.setBackground(new java.awt.Color(11,73,110));
             toggleMenu.setVisible(true);
         } else {
             toggleButton.setText("");
+            Cabeza.setBackground(new java.awt.Color(27,31,37));
             toggleMenu.setVisible(false);
         }
     }//GEN-LAST:event_toggleButtonActionPerformed
+
+    private void btnBeerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBeerMouseEntered
+        btnBeer.setForeground(new java.awt.Color(120, 154, 168));
+    }//GEN-LAST:event_btnBeerMouseEntered
+
+    private void btnBeerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBeerMouseExited
+        btnBeer.setForeground(new java.awt.Color(153, 201, 219));
+    }//GEN-LAST:event_btnBeerMouseExited
+
+    private void btnWineMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnWineMouseEntered
+        btnWine.setForeground(new java.awt.Color(120, 154, 168));
+    }//GEN-LAST:event_btnWineMouseEntered
+
+    private void btnWineMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnWineMouseExited
+        btnWine.setForeground(new java.awt.Color(153, 201, 219));
+    }//GEN-LAST:event_btnWineMouseExited
+
+    private void btnFoodMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFoodMouseEntered
+        btnFood.setForeground(new java.awt.Color(120, 154, 168));
+    }//GEN-LAST:event_btnFoodMouseEntered
+
+    private void btnFoodMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFoodMouseExited
+        btnFood.setForeground(new java.awt.Color(153, 201, 219));
+    }//GEN-LAST:event_btnFoodMouseExited
+
+    private void btnOutMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOutMouseEntered
+        btnOut.setForeground(new java.awt.Color(120, 154, 168));
+    }//GEN-LAST:event_btnOutMouseEntered
+
+    private void btnOutMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOutMouseExited
+        btnOut.setForeground(new java.awt.Color(153, 201, 219));
+    }//GEN-LAST:event_btnOutMouseExited
 
     /**
      * @param args the command line arguments

@@ -87,6 +87,7 @@ public class pgVerBebidas extends javax.swing.JPanel {
             }
         ));
         beerTable.setGridColor(new java.awt.Color(102, 102, 102));
+        beerTable.setRequestFocusEnabled(false);
         beerTable.setSelectionBackground(new java.awt.Color(27, 31, 37));
         beerTable.setSelectionForeground(new java.awt.Color(188, 183, 174));
         jScrollPane3.setViewportView(beerTable);
@@ -103,9 +104,9 @@ public class pgVerBebidas extends javax.swing.JPanel {
 
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 1070, 160));
 
-        imgWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
+        imgWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine_bottle.png")); // NOI18N
         imgWine.setText("jLabel2");
-        add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 40, 80));
+        add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 50, 80));
 
         imgBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
         imgBeer.setText("jLabel2");
