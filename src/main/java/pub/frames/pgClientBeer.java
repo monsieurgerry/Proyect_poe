@@ -5,7 +5,16 @@ import pub.frames.pgRegistrarBebida;
 public class pgClientBeer extends javax.swing.JPanel {
 
     public static int[] contador = new int[6];
-    public int dismunirStock;
+    public static String[] beerName = {
+        "Corona",
+        "Victoria",
+        "Pacifico",
+        "Modelo",
+        "Miller",
+        "Heineken"
+    };
+    private int dismunirStock, stock;
+    private String name;
 
     private void limpiarContador() {
         for (int i=0; i<contador.length; i++) {
@@ -475,13 +484,13 @@ public class pgClientBeer extends javax.swing.JPanel {
     }//GEN-LAST:event_jbBorrarActionPerformed
 
     private void jbPedirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPedirActionPerformed
-        int stock = pgRegistrarBebida.bebida.getStock();
         for (int i=0; i<contador.length; i++) {
             if (contador[i] > 0) {
+                name = beerName[i];
                 dismunirStock = stock-contador[i];
             }
         }
-        pgRegistrarBebida.bebida.setStock(dismunirStock);
+        pgRegistrarBebida.bebida.setStock(dismunirStock, name);
         limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
         Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed

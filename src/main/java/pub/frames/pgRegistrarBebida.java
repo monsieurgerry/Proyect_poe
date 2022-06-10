@@ -1,4 +1,3 @@
-// TODO: integer de celular es muy largo, adaptarlo con -- Long --
 package pub.frames;
 
 import pub.Cerveza;
@@ -8,9 +7,12 @@ import javax.swing.table.DefaultTableModel;
 public class pgRegistrarBebida extends javax.swing.JPanel {
 
   public static class Pila {
-    Cerveza beer;
-    int corona;
+
+    int beerStock;
     String envace;
+    boolean find = false;
+
+    Cerveza beer;
     VinosLicores wine;
     private int cantNodos;
 
@@ -134,26 +136,29 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
     public int getNodes() { return cantNodos; }
     public void setNodes(int cantNodos) { this.cantNodos=cantNodos; }
 
-    public int getStock() {
+    public int getStock(String name) {
         Cerveza aux = beer;
-        // if (beer == null) {
-        //     System.out.println("No hay cervezas");
-        // } else {
-        //     while (aux.getNext() != null) {
-        //         corona = aux.getCantidad();
-        //         aux.getNext();
-        //     }
-        // }
-        corona = aux.getCantidad();
-        return corona;
+        while (aux.getNext() != null) {
+            if (name.contains(aux.getNombre())) {
+                beerStock = aux.getCantidad();
+                break;
+            }
+        }
+        aux = aux.getNext();
+        return beerStock;
     }
 
-    public void setStock(int corona) {
-        this.corona = corona;
+    public void setStock(int beerStock, String name) {
+        this.beerStock = beerStock;
         Cerveza aux = beer;
-        aux.setCantidad(corona);
+        while (aux.getNext() != null) {
+            if (name.contains(aux.getNombre())) {
+                aux.setCantidad(beerStock);
+                break;
+            }
+        }
+        aux = aux.getNext();
     }
-
   }
 
     public static Pila bebida = new Pila();
