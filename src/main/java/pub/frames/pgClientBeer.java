@@ -1,8 +1,11 @@
 package pub.frames;
 
+import pub.frames.pgRegistrarBebida;
+
 public class pgClientBeer extends javax.swing.JPanel {
 
-    public int[] contador = new int[6];
+    public static int[] contador = new int[6];
+    public int dismunirStock;
 
     private void limpiarContador() {
         for (int i=0; i<contador.length; i++) {
@@ -75,6 +78,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus.setBorderPainted(false);
         btnMinus.setContentAreaFilled(false);
         btnMinus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus.setFocusPainted(false);
         btnMinus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus.addActionListener(new java.awt.event.ActionListener() {
@@ -92,6 +96,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus.setBorderPainted(false);
         btnPlus.setContentAreaFilled(false);
         btnPlus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus.setFocusPainted(false);
         btnPlus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus.addActionListener(new java.awt.event.ActionListener() {
@@ -115,13 +120,17 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName1.setText("Corona extra 355ml");
         add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 130, -1));
 
-        txtContador.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 10, 10));
+        txtContador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 30, 15));
 
-        txtContador1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador1.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador1.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 10, -1));
+        txtContador1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 30, 15));
 
         img2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_pacifico.png"))); // NOI18N
@@ -132,9 +141,11 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName2.setText("Pacifico 355ml");
         add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, 100, -1));
 
-        txtContador2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador2.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, 10, -1));
+        txtContador2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 30, 15));
 
         img3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_modelo.png"))); // NOI18N
@@ -154,13 +165,17 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName4.setText("Modelo especial 355ml");
         add(txtName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 150, -1));
 
-        txtContador3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador3.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, 10, 10));
+        txtContador3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 590, 30, 15));
 
-        txtContador4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador4.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador4.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 590, 10, 10));
+        txtContador4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 30, 15));
 
         img5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_heineken.png"))); // NOI18N
@@ -171,9 +186,11 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName5.setText("Heineken 355ml");
         add(txtName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 510, 120, -1));
 
-        txtContador5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txtContador5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador5.setForeground(new java.awt.Color(73, 168, 245));
-        add(txtContador5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, 10, 10));
+        txtContador5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtContador5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtContador5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 590, 30, 15));
 
         txtTitulo.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         txtTitulo.setForeground(new java.awt.Color(188, 183, 174));
@@ -189,6 +206,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus1.setBorderPainted(false);
         btnMinus1.setContentAreaFilled(false);
         btnMinus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus1.setFocusPainted(false);
         btnMinus1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus1.addActionListener(new java.awt.event.ActionListener() {
@@ -206,6 +224,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus1.setBorderPainted(false);
         btnPlus1.setContentAreaFilled(false);
         btnPlus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus1.setFocusPainted(false);
         btnPlus1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus1.addActionListener(new java.awt.event.ActionListener() {
@@ -223,6 +242,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus2.setBorderPainted(false);
         btnMinus2.setContentAreaFilled(false);
         btnMinus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus2.setFocusPainted(false);
         btnMinus2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus2.addActionListener(new java.awt.event.ActionListener() {
@@ -240,6 +260,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus2.setBorderPainted(false);
         btnPlus2.setContentAreaFilled(false);
         btnPlus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus2.setFocusPainted(false);
         btnPlus2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus2.addActionListener(new java.awt.event.ActionListener() {
@@ -257,6 +278,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus3.setBorderPainted(false);
         btnMinus3.setContentAreaFilled(false);
         btnMinus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus3.setFocusPainted(false);
         btnMinus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus3.addActionListener(new java.awt.event.ActionListener() {
@@ -274,6 +296,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus3.setBorderPainted(false);
         btnPlus3.setContentAreaFilled(false);
         btnPlus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus3.setFocusPainted(false);
         btnPlus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus3.addActionListener(new java.awt.event.ActionListener() {
@@ -291,6 +314,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus4.setBorderPainted(false);
         btnMinus4.setContentAreaFilled(false);
         btnMinus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus4.setFocusPainted(false);
         btnMinus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus4.addActionListener(new java.awt.event.ActionListener() {
@@ -308,6 +332,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus4.setBorderPainted(false);
         btnPlus4.setContentAreaFilled(false);
         btnPlus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus4.setFocusPainted(false);
         btnPlus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus4.addActionListener(new java.awt.event.ActionListener() {
@@ -325,6 +350,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnMinus5.setBorderPainted(false);
         btnMinus5.setContentAreaFilled(false);
         btnMinus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMinus5.setFocusPainted(false);
         btnMinus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMinus5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnMinus5.addActionListener(new java.awt.event.ActionListener() {
@@ -342,6 +368,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus5.setBorderPainted(false);
         btnPlus5.setContentAreaFilled(false);
         btnPlus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPlus5.setFocusPainted(false);
         btnPlus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPlus5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_pressed.png"))); // NOI18N
         btnPlus5.addActionListener(new java.awt.event.ActionListener() {
@@ -448,10 +475,16 @@ public class pgClientBeer extends javax.swing.JPanel {
     }//GEN-LAST:event_jbBorrarActionPerformed
 
     private void jbPedirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPedirActionPerformed
+        int stock = pgRegistrarBebida.bebida.getStock();
+        for (int i=0; i<contador.length; i++) {
+            if (contador[i] > 0) {
+                dismunirStock = stock-contador[i];
+            }
+        }
+        pgRegistrarBebida.bebida.setStock(dismunirStock);
         limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
         Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Mensaje;

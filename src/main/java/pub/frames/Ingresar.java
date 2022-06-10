@@ -53,6 +53,8 @@ public class Ingresar extends javax.swing.JFrame {
     initComponents();
     setLocationRelativeTo(null);
     pila = new Pila();
+    // pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
+    // bebida.pushWine();
     pila.push("victor", "123"); // TODO: no se agrega como el resto.
     pila.push("gerardo", "123");
     pila.push("david", "123");
@@ -224,12 +226,12 @@ public class Ingresar extends javax.swing.JFrame {
                 jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
                 ClienteMenu client = new ClienteMenu();
                 client.setVisible(true);
-                this.dispose();
+                this.setVisible(false);
             } else {
                 jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
                 EmpleadoMenu empleado = new EmpleadoMenu();
                 empleado.setVisible(true);
-                this.dispose();
+                this.setVisible(false);
             }
         } else {
             Mensaje.setForeground(new java.awt.Color(204, 0, 0));
@@ -257,6 +259,7 @@ public class Ingresar extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

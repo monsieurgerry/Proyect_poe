@@ -1,51 +1,30 @@
 package pub;
 
-public class Cerveza {
-    private String nombre;
-    private String marca;
-    private int cantidad;
-    private int tamano;
-    private float alcohol;
+public class Cerveza extends Bebidas {
+    private String estilo; // oscura, light, etc.
+    private boolean envace;
     public Cerveza next;
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public Cerveza() {
+        this.estilo = estilo;
+        this.envace = envace;
+        this.next = next;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public String getEstilo() {
+        return estilo;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setEstilo(String estilo) {
+        this.estilo = estilo;
     }
 
-    public void setTamano(int tamano) {
-        this.tamano = tamano;
+    public boolean necesitaEnvace() {
+        return envace;
     }
 
-    public void setAlcohol(float alchol) {
-        this.alcohol = alchol;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public int getTamano() {
-        return tamano;
-    }
-
-    public float getAlcohol() {
-        return alcohol;
+    public void setEnvace(boolean envace) {
+        this.envace = envace;
     }
 
     public Cerveza getNext() {
@@ -53,15 +32,6 @@ public class Cerveza {
     }
 
     public void setNext(Cerveza next) {
-        this.next = next;
-    }
-
-    public Cerveza() {
-        this.nombre = nombre;
-        this.marca = marca;
-        this.cantidad = cantidad;
-        this.tamano = tamano;
-        this.alcohol = alcohol;
         this.next = next;
     }
 }

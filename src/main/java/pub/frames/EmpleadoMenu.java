@@ -184,8 +184,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_bebidasRegistrarActionPerformed
 
     private void bebidasVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasVerActionPerformed
-      // pgVerBebidas pg = new pgVerBebidas();
-      // showPanel(pg);
+      pgVerBebidas pg = new pgVerBebidas();
+      showPanel(pg);
     }//GEN-LAST:event_bebidasVerActionPerformed
 
     private void comidaVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comidaVerActionPerformed
@@ -193,9 +193,6 @@ public class EmpleadoMenu extends javax.swing.JFrame {
       // showPanel(pg);
     }//GEN-LAST:event_comidaVerActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

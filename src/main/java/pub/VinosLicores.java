@@ -1,51 +1,30 @@
 package pub;
 
-public class VinosLicores {
-    private String nombre;
-    private String marca;
-    private int cantidad;
-    private int tamano;
-    private float alcohol;
+public class VinosLicores extends Bebidas {
+    private String tipoBotella;
+    private String origen;
     public VinosLicores next;
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public VinosLicores() {
+        this.tipoBotella = tipoBotella;
+        this.origen = origen;
+        this.next = next;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public String getTipoBotella() {
+        return tipoBotella;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setTipoBotella(String tipoBotella) {
+        this.tipoBotella = tipoBotella;
     }
 
-    public void setTamano(int tamano) {
-        this.tamano = tamano;
+    public String getOrigen() {
+        return origen;
     }
 
-    public void setAlcohol(float alcohol) {
-        this.alcohol = alcohol;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public int getTamano() {
-        return tamano;
-    }
-
-    public float getAlcohol() {
-        return alcohol;
+    public void setOrigen(String origen) {
+        this.origen = origen;
     }
 
     public VinosLicores getNext() {
@@ -53,15 +32,6 @@ public class VinosLicores {
     }
 
     public void setNext(VinosLicores next) {
-        this.next = next;
-    }
-
-    public VinosLicores() {
-        this.nombre = nombre;
-        this.marca = marca;
-        this.cantidad = cantidad;
-        this.tamano = tamano;
-        this.alcohol = alcohol;
         this.next = next;
     }
 }
