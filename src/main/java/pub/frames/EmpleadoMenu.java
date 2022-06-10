@@ -65,7 +65,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
             .addGap(0, 721, Short.MAX_VALUE)
         );
 
-        menuEmpleados.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/user.png")); // NOI18N
+        menuEmpleados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user.png"))); // NOI18N
         menuEmpleados.setText("Empleados");
 
         empleadoRegistrar.setText("Registrar");
@@ -86,7 +86,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(menuEmpleados);
 
-        menuBebidas.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/drinks.png")); // NOI18N
+        menuBebidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/drinks.png"))); // NOI18N
         menuBebidas.setText("Bebidas");
 
         bebidasRegistrar.setText("Registrar");
@@ -107,7 +107,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(menuBebidas);
 
-        menuComidas.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/food.png")); // NOI18N
+        menuComidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/food.png"))); // NOI18N
         menuComidas.setText("Comidas");
 
         comidaRegistrar.setText("Registrar");
@@ -128,7 +128,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(menuComidas);
 
-        menuOpciones.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/settings.png")); // NOI18N
+        menuOpciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/settings.png"))); // NOI18N
         menuOpciones.setText("Opciones");
 
         logout.setText("Cerrar sesion");

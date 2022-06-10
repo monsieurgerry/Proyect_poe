@@ -31,15 +31,20 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         bVolver.setBackground(new java.awt.Color(28, 51, 132));
         bVolver.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVolver.setForeground(new java.awt.Color(255, 255, 255));
+        bVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bVolver.setText("VOLVER");
         bVolver.setBorder(null);
+        bVolver.setBorderPainted(false);
+        bVolver.setContentAreaFilled(false);
         bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bVolverActionPerformed(evt);
             }
         });
-        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 200, 40));
+        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 200, 60));
 
         jScrollPane2.setBackground(new java.awt.Color(27, 31, 37));
 

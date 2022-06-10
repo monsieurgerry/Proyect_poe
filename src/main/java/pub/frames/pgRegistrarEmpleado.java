@@ -188,41 +188,56 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         bRegistrar.setBackground(new java.awt.Color(28, 51, 132));
         bRegistrar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        bRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bRegistrar.setText("REGISTRAR");
         bRegistrar.setBorder(null);
+        bRegistrar.setBorderPainted(false);
+        bRegistrar.setContentAreaFilled(false);
         bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bRegistrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bRegistrarActionPerformed(evt);
             }
         });
-        add(bRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 200, 40));
+        add(bRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 200, 60));
 
         bEliminar.setBackground(new java.awt.Color(28, 51, 132));
         bEliminar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        bEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bEliminar.setText("ELIMINAR");
         bEliminar.setBorder(null);
+        bEliminar.setBorderPainted(false);
+        bEliminar.setContentAreaFilled(false);
         bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bEliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bEliminarActionPerformed(evt);
             }
         });
-        add(bEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 470, 200, 40));
+        add(bEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, 200, 60));
 
         bVolver.setBackground(new java.awt.Color(28, 51, 132));
         bVolver.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVolver.setForeground(new java.awt.Color(255, 255, 255));
+        bVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bVolver.setText("VOLVER");
         bVolver.setBorder(null);
+        bVolver.setBorderPainted(false);
+        bVolver.setContentAreaFilled(false);
         bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bVolverActionPerformed(evt);
             }
         });
-        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 470, 200, 40));
+        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 200, 60));
 
         jSeparator1.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 530, -1));
@@ -240,10 +255,10 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 530, 10));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 720, 20));
 
-        imWaiter.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/waiter.png")); // NOI18N
+        imWaiter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/waiter.png"))); // NOI18N
         add(imWaiter, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 420, 350));
 
-        imQuestion.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/questionMark.png")); // NOI18N
+        imQuestion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/questionMark.png"))); // NOI18N
         add(imQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 60, 70, 110));
     }// </editor-fold>//GEN-END:initComponents
 

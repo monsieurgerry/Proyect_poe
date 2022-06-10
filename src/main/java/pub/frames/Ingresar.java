@@ -138,14 +138,14 @@ public class Ingresar extends javax.swing.JFrame {
         jbIngresar.setBackground(new java.awt.Color(28, 51, 132));
         jbIngresar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         jbIngresar.setForeground(new java.awt.Color(213, 224, 225));
-        jbIngresar.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradient.png")); // NOI18N
+        jbIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_gradient.png"))); // NOI18N
         jbIngresar.setText("INGRESAR");
         jbIngresar.setBorder(null);
         jbIngresar.setBorderPainted(false);
         jbIngresar.setContentAreaFilled(false);
         jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbIngresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jbIngresar.setRolloverIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradientPressed.png")); // NOI18N
+        jbIngresar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_gradientPressed.png"))); // NOI18N
         jbIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbIngresarActionPerformed(evt);
@@ -217,7 +217,7 @@ public class Ingresar extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

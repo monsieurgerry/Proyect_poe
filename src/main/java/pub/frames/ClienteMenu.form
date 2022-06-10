@@ -94,7 +94,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png"/>
+              <Image iconType="3" name="/images/menu_down.png"/>
             </Property>
             <Property name="actionCommand" type="java.lang.String" value="x"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -172,7 +172,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_hamburger.png"/>
+              <Image iconType="3" name="/images/gradient_hamburger.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Comidas"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -202,7 +202,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_beer.png"/>
+              <Image iconType="3" name="/images/gradient_beer.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cervezas"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -232,7 +232,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_wine.png"/>
+              <Image iconType="3" name="/images/gradient_wine.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Vinos &amp; Licores"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -262,7 +262,7 @@
               <Color blue="db" green="c9" red="99" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_logout.png"/>
+              <Image iconType="3" name="/images/gradient_logout.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
             <Property name="borderPainted" type="boolean" value="false"/>

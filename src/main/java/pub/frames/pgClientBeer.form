@@ -30,7 +30,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_corona.png"/>
+          <Image iconType="3" name="/images/beer_corona.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -48,7 +48,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -62,7 +62,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -83,7 +83,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -97,7 +97,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -127,7 +127,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_victoria.png"/>
+          <Image iconType="3" name="/images/beer_victoria.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -188,7 +188,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_pacifico.png"/>
+          <Image iconType="3" name="/images/beer_pacifico.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -232,7 +232,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_modelo.png"/>
+          <Image iconType="3" name="/images/beer_modelo.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -259,7 +259,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_miller.png"/>
+          <Image iconType="3" name="/images/beer_miller.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -320,7 +320,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer_heineken.png"/>
+          <Image iconType="3" name="/images/beer_heineken.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -386,7 +386,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -400,7 +400,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -421,7 +421,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -435,7 +435,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -456,7 +456,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -470,7 +470,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -491,7 +491,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -505,7 +505,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -526,7 +526,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -540,7 +540,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -561,7 +561,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -575,7 +575,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -596,7 +596,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -610,7 +610,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -631,7 +631,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -645,7 +645,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -666,7 +666,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf068;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -680,7 +680,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -701,7 +701,7 @@
           <Color blue="f5" green="a8" red="49" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradient.png"/>
+          <Image iconType="3" name="/images/btn2_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xf067;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -715,7 +715,7 @@
         <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn2_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn2_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -739,7 +739,7 @@
           <Color blue="e4" green="e5" red="c8" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradient.png"/>
+          <Image iconType="3" name="/images/btn1_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="BORRAR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -752,7 +752,7 @@
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn1_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>
@@ -776,7 +776,7 @@
           <Color blue="e4" green="e5" red="dc" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradient.png"/>
+          <Image iconType="3" name="/images/btn1_gradient.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="PEDIR"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -789,7 +789,7 @@
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1_gradientPressed.png"/>
+          <Image iconType="3" name="/images/btn1_gradientPressed.png"/>
         </Property>
       </Properties>
       <Events>

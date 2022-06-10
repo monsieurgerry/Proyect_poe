@@ -89,42 +89,57 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         bRegistrar.setBackground(new java.awt.Color(28, 51, 132));
         bRegistrar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        bRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bRegistrar.setText("REGISTRAR");
         bRegistrar.setBorder(null);
+        bRegistrar.setBorderPainted(false);
+        bRegistrar.setContentAreaFilled(false);
         bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bRegistrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bRegistrarActionPerformed(evt);
             }
         });
-        add(bRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 200, 40));
+        add(bRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 200, 50));
 
         bEliminar.setBackground(new java.awt.Color(28, 51, 132));
         bEliminar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        bEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bEliminar.setText("ELIMINAR");
         bEliminar.setBorder(null);
+        bEliminar.setBorderPainted(false);
+        bEliminar.setContentAreaFilled(false);
         bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bEliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bEliminarActionPerformed(evt);
             }
         });
-        add(bEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, 200, 40));
+        add(bEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, 200, 50));
 
         bVolver.setBackground(new java.awt.Color(28, 51, 132));
         bVolver.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVolver.setForeground(new java.awt.Color(255, 255, 255));
+        bVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bVolver.setText("VOLVER");
         bVolver.setBorder(null);
+        bVolver.setBorderPainted(false);
+        bVolver.setContentAreaFilled(false);
         bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bVolverActionPerformed(evt);
             }
         });
-        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 510, 200, 40));
-        add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 590, 720, 20));
+        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 510, 200, 50));
+        add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 720, 20));
 
         grupoBebidas.add(jrbWine);
         jrbWine.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
@@ -148,10 +163,10 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         });
         add(jrbBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 110, 30));
 
-        imgWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine.png")); // NOI18N
+        imgWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
         add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, 40, 60));
 
-        imgBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
+        imgBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
         add(imgBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 50, 60));
 
         beerPanel.setBackground(new java.awt.Color(27, 31, 37));

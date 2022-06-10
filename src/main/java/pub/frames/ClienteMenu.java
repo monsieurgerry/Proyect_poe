@@ -56,7 +56,7 @@ public class ClienteMenu extends javax.swing.JFrame {
 
         toggleButton.setFont(new java.awt.Font("JetBrainsMono Nerd Font Mono", 0, 48)); // NOI18N
         toggleButton.setForeground(new java.awt.Color(255, 255, 255));
-        toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
+        toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_down.png"))); // NOI18N
         toggleButton.setActionCommand("x");
         toggleButton.setBorder(null);
         toggleButton.setBorderPainted(false);
@@ -96,7 +96,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setBackground(new java.awt.Color(19, 119, 180));
         btnFood.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnFood.setForeground(new java.awt.Color(153, 201, 219));
-        btnFood.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_hamburger.png")); // NOI18N
+        btnFood.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gradient_hamburger.png"))); // NOI18N
         btnFood.setText("Comidas");
         btnFood.setBorderPainted(false);
         btnFood.setContentAreaFilled(false);
@@ -121,7 +121,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setBackground(new java.awt.Color(19, 119, 180));
         btnBeer.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnBeer.setForeground(new java.awt.Color(153, 201, 219));
-        btnBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_beer.png")); // NOI18N
+        btnBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gradient_beer.png"))); // NOI18N
         btnBeer.setText("Cervezas");
         btnBeer.setContentAreaFilled(false);
         btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -146,7 +146,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setBackground(new java.awt.Color(19, 119, 180));
         btnWine.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnWine.setForeground(new java.awt.Color(153, 201, 219));
-        btnWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_wine.png")); // NOI18N
+        btnWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gradient_wine.png"))); // NOI18N
         btnWine.setText("Vinos & Licores");
         btnWine.setBorderPainted(false);
         btnWine.setContentAreaFilled(false);
@@ -171,7 +171,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut.setBackground(new java.awt.Color(19, 119, 180));
         btnOut.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
         btnOut.setForeground(new java.awt.Color(153, 201, 219));
-        btnOut.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/gradient_logout.png")); // NOI18N
+        btnOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gradient_logout.png"))); // NOI18N
         btnOut.setText("Salir");
         btnOut.setBorderPainted(false);
         btnOut.setContentAreaFilled(false);
@@ -262,8 +262,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         pgClientBeer pg = new pgClientBeer();
         toggleMenu.setVisible(false);
         toggleButton.setSelected(false);
-        // toggleButton.setText("");
-        toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
+        toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_down.png")));
         Cabeza.setBackground(new java.awt.Color(27,31,37));
         showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
@@ -280,13 +279,11 @@ public class ClienteMenu extends javax.swing.JFrame {
 
     private void toggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleButtonActionPerformed
         if (toggleButton.isSelected()) {
-            // toggleButton.setText("x");
-            toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_up.png")); // NOI18N
+            toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_up.png")));
             Cabeza.setBackground(new java.awt.Color(11,73,110));
             toggleMenu.setVisible(true);
         } else {
-            // toggleButton.setText("");
-            toggleButton.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/menu_down.png")); // NOI18N
+            toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_down.png")));
             Cabeza.setBackground(new java.awt.Color(27,31,37));
             toggleMenu.setVisible(false);
         }

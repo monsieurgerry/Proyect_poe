@@ -111,11 +111,11 @@ public class pgVerBebidas extends javax.swing.JPanel {
 
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 1070, 160));
 
-        imgWine.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/wine_bottle.png")); // NOI18N
+        imgWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine_bottle.png"))); // NOI18N
         imgWine.setText("jLabel2");
         add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 50, 80));
 
-        imgBeer.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/beer.png")); // NOI18N
+        imgBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
         imgBeer.setText("jLabel2");
         add(imgBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 50, 50));
 
