@@ -14,13 +14,23 @@ public class pgClientBeer extends javax.swing.JPanel {
         "Miller",
         "Heineken"
     };
-    private int dismunirStock, stock;
+    public int[] precio = {
+        21,
+        21,
+        23,
+        24,
+        40,
+        24
+    };
+    private int dismunirStock, stock, total=0;
     private String name;
 
     private void limpiarContador() {
         for (int i=0; i<contador.length; i++) {
             contador[i] = 0;
         }
+        total=0;
+        txPrecio.setText("0");
         txtContador.setText("");
         txtContador1.setText("");
         txtContador2.setText("");
@@ -70,6 +80,14 @@ public class pgClientBeer extends javax.swing.JPanel {
         btnPlus5 = new javax.swing.JButton();
         jbBorrar = new javax.swing.JButton();
         jbPedir = new javax.swing.JButton();
+        txtName6 = new javax.swing.JLabel();
+        txtName7 = new javax.swing.JLabel();
+        txtName8 = new javax.swing.JLabel();
+        txtName9 = new javax.swing.JLabel();
+        txtName10 = new javax.swing.JLabel();
+        txtName11 = new javax.swing.JLabel();
+        txPrecio = new javax.swing.JLabel();
+        txtTotal = new javax.swing.JLabel();
         Mensaje = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(27, 31, 37));
@@ -119,16 +137,17 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName.setForeground(new java.awt.Color(204, 204, 204));
         txtName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtName.setText("Victoria 355ml");
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 100, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 100, -1));
 
         img1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_victoria.png"))); // NOI18N
         add(img1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 50, 150));
 
-        txtName1.setForeground(new java.awt.Color(204, 204, 204));
+        txtName1.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName1.setForeground(new java.awt.Color(102, 102, 102));
         txtName1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName1.setText("Corona extra 355ml");
-        add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 130, -1));
+        txtName1.setText("$ 23");
+        add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 130, -1));
 
         txtContador.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador.setForeground(new java.awt.Color(73, 168, 245));
@@ -149,7 +168,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName2.setForeground(new java.awt.Color(204, 204, 204));
         txtName2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtName2.setText("Pacifico 355ml");
-        add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, 100, -1));
+        add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, 100, -1));
 
         txtContador2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador2.setForeground(new java.awt.Color(73, 168, 245));
@@ -164,7 +183,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName3.setForeground(new java.awt.Color(204, 204, 204));
         txtName3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtName3.setText("Miller 945ml");
-        add(txtName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 510, 100, -1));
+        add(txtName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 500, 100, -1));
 
         img4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_miller.png"))); // NOI18N
@@ -173,7 +192,7 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtName4.setForeground(new java.awt.Color(204, 204, 204));
         txtName4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtName4.setText("Modelo especial 355ml");
-        add(txtName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 150, -1));
+        add(txtName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 150, -1));
 
         txtContador3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador3.setForeground(new java.awt.Color(73, 168, 245));
@@ -189,12 +208,12 @@ public class pgClientBeer extends javax.swing.JPanel {
 
         img5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         img5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_heineken.png"))); // NOI18N
-        add(img5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 50, 150));
+        add(img5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 50, 140));
 
         txtName5.setForeground(new java.awt.Color(204, 204, 204));
         txtName5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtName5.setText("Heineken 355ml");
-        add(txtName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 510, 120, -1));
+        add(txtName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, 120, -1));
 
         txtContador5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador5.setForeground(new java.awt.Color(73, 168, 245));
@@ -424,98 +443,175 @@ public class pgClientBeer extends javax.swing.JPanel {
         });
         add(jbPedir, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 620, 110, 50));
 
-        Mensaje.setFont(new java.awt.Font("JetBrainsMono NF", 0, 10)); // NOI18N
+        txtName6.setForeground(new java.awt.Color(204, 204, 204));
+        txtName6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName6.setText("Corona extra 355ml");
+        add(txtName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 130, -1));
+
+        txtName7.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName7.setForeground(new java.awt.Color(102, 102, 102));
+        txtName7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName7.setText("$ 21");
+        add(txtName7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 130, -1));
+
+        txtName8.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName8.setForeground(new java.awt.Color(102, 102, 102));
+        txtName8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName8.setText("$ 21");
+        add(txtName8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 130, -1));
+
+        txtName9.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName9.setForeground(new java.awt.Color(102, 102, 102));
+        txtName9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName9.setText("$ 24");
+        add(txtName9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 130, -1));
+
+        txtName10.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName10.setForeground(new java.awt.Color(102, 102, 102));
+        txtName10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName10.setText("$ 40");
+        add(txtName10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 130, -1));
+
+        txtName11.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName11.setForeground(new java.awt.Color(102, 102, 102));
+        txtName11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName11.setText("$ 24");
+        add(txtName11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, 130, -1));
+
+        txPrecio.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        txPrecio.setForeground(new java.awt.Color(153, 153, 153));
+        txPrecio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txPrecio.setText("0");
+        add(txPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 630, 40, -1));
+
+        txtTotal.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        txtTotal.setForeground(new java.awt.Color(153, 153, 153));
+        txtTotal.setText("Total:");
+        add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 630, -1, -1));
+
+        Mensaje.setFont(new java.awt.Font("JetBrainsMono NF", 0, 16)); // NOI18N
         Mensaje.setForeground(new java.awt.Color(0, 153, 0));
         Mensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 630, 260, 40));
+        add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 650, 260, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusActionPerformed
         contador[0]++;
         txtContador.setText(Integer.toString(contador[0]));
+        total+=precio[0];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlusActionPerformed
 
     private void btnPlus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus1ActionPerformed
         contador[1]++;
         txtContador1.setText(Integer.toString(contador[1]));
+        total+=precio[1];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlus1ActionPerformed
 
     private void btnPlus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus2ActionPerformed
         contador[2]++;
         txtContador2.setText(Integer.toString(contador[2]));
+        total+=precio[2];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlus2ActionPerformed
 
     private void btnPlus3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus3ActionPerformed
         contador[3]++;
         txtContador3.setText(Integer.toString(contador[3]));
+        total+=precio[3];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlus3ActionPerformed
 
     private void btnPlus4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus4ActionPerformed
         contador[4]++;
         txtContador4.setText(Integer.toString(contador[4]));
+        total+=precio[4];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlus4ActionPerformed
 
     private void btnPlus5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus5ActionPerformed
         contador[5]++;
         txtContador5.setText(Integer.toString(contador[5]));
+        total+=precio[5];
+        txPrecio.setText(Integer.toString(total));
     }//GEN-LAST:event_btnPlus5ActionPerformed
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinusActionPerformed
         if (contador[0] > 0) {
             contador[0]--;
             txtContador.setText(Integer.toString(contador[0]));
+            total-=precio[0];
+            txPrecio.setText(Integer.toString(total));
         } else {
             txtContador.setText(Integer.toString(contador[0]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinusActionPerformed
 
     private void btnMinus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus1ActionPerformed
         if (contador[1] > 0) {
             contador[1]--;
-            txtContador.setText(Integer.toString(contador[1]));
+            txtContador1.setText(Integer.toString(contador[1]));
+            total-=precio[1];
+            txPrecio.setText(Integer.toString(total));
         } else {
-            txtContador.setText(Integer.toString(contador[1]));
+            txtContador1.setText(Integer.toString(contador[1]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinus1ActionPerformed
 
     private void btnMinus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus2ActionPerformed
         if (contador[2] > 0) {
             contador[2]--;
-            txtContador.setText(Integer.toString(contador[2]));
+            txtContador2.setText(Integer.toString(contador[2]));
+            total-=precio[2];
+            txPrecio.setText(Integer.toString(total));
         } else {
-            txtContador.setText(Integer.toString(contador[2]));
+            txtContador2.setText(Integer.toString(contador[2]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinus2ActionPerformed
 
     private void btnMinus3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus3ActionPerformed
         if (contador[3] > 0) {
             contador[3]--;
-            txtContador.setText(Integer.toString(contador[3]));
+            txtContador3.setText(Integer.toString(contador[3]));
+            total-=precio[3];
+            txPrecio.setText(Integer.toString(total));
         } else {
-            txtContador.setText(Integer.toString(contador[3]));
+            txtContador3.setText(Integer.toString(contador[3]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinus3ActionPerformed
 
     private void btnMinus4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus4ActionPerformed
         if (contador[4] > 0) {
             contador[4]--;
-            txtContador.setText(Integer.toString(contador[4]));
+            txtContador4.setText(Integer.toString(contador[4]));
+            total-=precio[4];
+            txPrecio.setText(Integer.toString(total));
         } else {
-            txtContador.setText(Integer.toString(contador[4]));
+            txtContador4.setText(Integer.toString(contador[4]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinus4ActionPerformed
 
     private void btnMinus5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus5ActionPerformed
         if (contador[5] > 0) {
             contador[5]--;
-            txtContador.setText(Integer.toString(contador[5]));
+            txtContador5.setText(Integer.toString(contador[5]));
+            total-=precio[5];
+            txPrecio.setText(Integer.toString(total));
         } else {
-            txtContador.setText(Integer.toString(contador[5]));
+            txtContador5.setText(Integer.toString(contador[5]));
+            txPrecio.setText(Integer.toString(total));
         }
     }//GEN-LAST:event_btnMinus5ActionPerformed
 
     private void jbBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBorrarActionPerformed
         limpiarContador();
+        Mensaje.setText("");
     }//GEN-LAST:event_jbBorrarActionPerformed
 
     private void jbPedirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPedirActionPerformed
@@ -523,12 +619,18 @@ public class pgClientBeer extends javax.swing.JPanel {
             if (contador[i] > 0) {
                 name = beerName[i];
                 stock = pgRegistrarBebida.beer.getBeerStock(name);
-                dismunirStock = stock-contador[i];
+                if (stock <= 0) {
+                    Mensaje.setForeground(new java.awt.Color(215, 35, 35));
+                    Mensaje.setText("No hay stock disponible");
+                } else {
+                    dismunirStock = stock-contador[i];
+                    pgRegistrarBebida.beer.setBeerStock(dismunirStock, name);
+                    Mensaje.setForeground(new java.awt.Color(0, 153, 0));
+                    Mensaje.setText("Su pedido fue recibido!");
+                    limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
+                }
             }
         }
-        pgRegistrarBebida.beer.setBeerStock(dismunirStock, name);
-        limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
-        Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -553,6 +655,7 @@ public class pgClientBeer extends javax.swing.JPanel {
     private javax.swing.JLabel img5;
     private javax.swing.JButton jbBorrar;
     private javax.swing.JButton jbPedir;
+    private javax.swing.JLabel txPrecio;
     private javax.swing.JLabel txtContador;
     private javax.swing.JLabel txtContador1;
     private javax.swing.JLabel txtContador2;
@@ -561,10 +664,17 @@ public class pgClientBeer extends javax.swing.JPanel {
     private javax.swing.JLabel txtContador5;
     private javax.swing.JLabel txtName;
     private javax.swing.JLabel txtName1;
+    private javax.swing.JLabel txtName10;
+    private javax.swing.JLabel txtName11;
     private javax.swing.JLabel txtName2;
     private javax.swing.JLabel txtName3;
     private javax.swing.JLabel txtName4;
     private javax.swing.JLabel txtName5;
+    private javax.swing.JLabel txtName6;
+    private javax.swing.JLabel txtName7;
+    private javax.swing.JLabel txtName8;
+    private javax.swing.JLabel txtName9;
     private javax.swing.JLabel txtTitulo;
+    private javax.swing.JLabel txtTotal;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,12 +1,11 @@
-// TODO: integer de celular es muy largo, adaptarlo con -- Long --
 package pub.frames;
 
-import pub.Empleados;
+import pub.Comida;
 
-public class pgRegistrarEmpleado extends javax.swing.JPanel {
+public class pgRegistrarComida extends javax.swing.JPanel {
 
-  public static Empleados.Pila pila = new Empleados.Pila();
-  public pgRegistrarEmpleado() {
+  public static Comida.Pila pila = new Comida.Pila();
+  public pgRegistrarComida() {
     initComponents();
   }
 
@@ -21,15 +20,15 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
 
         Title = new javax.swing.JLabel();
         txName = new javax.swing.JLabel();
-        txApellido = new javax.swing.JLabel();
-        txPuesto = new javax.swing.JLabel();
-        txEdad = new javax.swing.JLabel();
-        txCel = new javax.swing.JLabel();
+        txTipo = new javax.swing.JLabel();
+        txPrecio = new javax.swing.JLabel();
+        txCal = new javax.swing.JLabel();
+        txSize = new javax.swing.JLabel();
         jtfNombre = new javax.swing.JTextField();
-        jtfApellido = new javax.swing.JTextField();
-        jtfPuesto = new javax.swing.JTextField();
-        jtfEdad = new javax.swing.JTextField();
-        jtfNumCel = new javax.swing.JTextField();
+        jtfTipo = new javax.swing.JTextField();
+        jtfPrecio = new javax.swing.JTextField();
+        jtfCal = new javax.swing.JTextField();
+        jtfSize = new javax.swing.JTextField();
         bRegistrar = new javax.swing.JButton();
         bEliminar = new javax.swing.JButton();
         bVolver = new javax.swing.JButton();
@@ -39,8 +38,8 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         Mensaje = new javax.swing.JLabel();
-        imWaiter = new javax.swing.JLabel();
-        imQuestion = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(27, 31, 37));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -48,38 +47,38 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         Title.setBackground(new java.awt.Color(188, 183, 174));
         Title.setFont(new java.awt.Font("SF Pro Display", 1, 48)); // NOI18N
         Title.setForeground(new java.awt.Color(188, 183, 174));
-        Title.setText("REGISTRO DE EMPLEADO");
+        Title.setText("REGISTRO DE COMIDAS");
         add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
 
         txName.setBackground(new java.awt.Color(188, 183, 174));
         txName.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
         txName.setForeground(new java.awt.Color(188, 183, 174));
-        txName.setText("Nombre del Empleado:");
+        txName.setText("Nombre del Plato:");
         add(txName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
 
-        txApellido.setBackground(new java.awt.Color(188, 183, 174));
-        txApellido.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
-        txApellido.setForeground(new java.awt.Color(188, 183, 174));
-        txApellido.setText("Apellido del Empleado:");
-        add(txApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+        txTipo.setBackground(new java.awt.Color(188, 183, 174));
+        txTipo.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
+        txTipo.setForeground(new java.awt.Color(188, 183, 174));
+        txTipo.setText("Tipo de platillo:");
+        add(txTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        txPuesto.setBackground(new java.awt.Color(188, 183, 174));
-        txPuesto.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
-        txPuesto.setForeground(new java.awt.Color(188, 183, 174));
-        txPuesto.setText("Puesto del Empleado:");
-        add(txPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        txPrecio.setBackground(new java.awt.Color(188, 183, 174));
+        txPrecio.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
+        txPrecio.setForeground(new java.awt.Color(188, 183, 174));
+        txPrecio.setText("Precio del platillo:");
+        add(txPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
-        txEdad.setBackground(new java.awt.Color(188, 183, 174));
-        txEdad.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
-        txEdad.setForeground(new java.awt.Color(188, 183, 174));
-        txEdad.setText("Edad del Emplado:");
-        add(txEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+        txCal.setBackground(new java.awt.Color(188, 183, 174));
+        txCal.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
+        txCal.setForeground(new java.awt.Color(188, 183, 174));
+        txCal.setText("Cantidad de calorias:");
+        add(txCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
 
-        txCel.setBackground(new java.awt.Color(188, 183, 174));
-        txCel.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
-        txCel.setForeground(new java.awt.Color(188, 183, 174));
-        txCel.setText("Numero de celular:");
-        add(txCel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
+        txSize.setBackground(new java.awt.Color(188, 183, 174));
+        txSize.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
+        txSize.setForeground(new java.awt.Color(188, 183, 174));
+        txSize.setText("Tamaño:");
+        add(txSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
 
         jtfNombre.setBackground(new java.awt.Color(27, 31, 37));
         jtfNombre.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
@@ -87,29 +86,29 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         jtfNombre.setBorder(null);
         add(jtfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 530, -1));
 
-        jtfApellido.setBackground(new java.awt.Color(27, 31, 37));
-        jtfApellido.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
-        jtfApellido.setForeground(new java.awt.Color(204, 204, 204));
-        jtfApellido.setBorder(null);
-        add(jtfApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 530, -1));
+        jtfTipo.setBackground(new java.awt.Color(27, 31, 37));
+        jtfTipo.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
+        jtfTipo.setForeground(new java.awt.Color(204, 204, 204));
+        jtfTipo.setBorder(null);
+        add(jtfTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 530, -1));
 
-        jtfPuesto.setBackground(new java.awt.Color(27, 31, 37));
-        jtfPuesto.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
-        jtfPuesto.setForeground(new java.awt.Color(204, 204, 204));
-        jtfPuesto.setBorder(null);
-        add(jtfPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 530, -1));
+        jtfPrecio.setBackground(new java.awt.Color(27, 31, 37));
+        jtfPrecio.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
+        jtfPrecio.setForeground(new java.awt.Color(204, 204, 204));
+        jtfPrecio.setBorder(null);
+        add(jtfPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 530, -1));
 
-        jtfEdad.setBackground(new java.awt.Color(27, 31, 37));
-        jtfEdad.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
-        jtfEdad.setForeground(new java.awt.Color(204, 204, 204));
-        jtfEdad.setBorder(null);
-        add(jtfEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 530, -1));
+        jtfCal.setBackground(new java.awt.Color(27, 31, 37));
+        jtfCal.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
+        jtfCal.setForeground(new java.awt.Color(204, 204, 204));
+        jtfCal.setBorder(null);
+        add(jtfCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 530, -1));
 
-        jtfNumCel.setBackground(new java.awt.Color(27, 31, 37));
-        jtfNumCel.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
-        jtfNumCel.setForeground(new java.awt.Color(204, 204, 204));
-        jtfNumCel.setBorder(null);
-        add(jtfNumCel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 530, -1));
+        jtfSize.setBackground(new java.awt.Color(27, 31, 37));
+        jtfSize.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
+        jtfSize.setForeground(new java.awt.Color(204, 204, 204));
+        jtfSize.setBorder(null);
+        add(jtfSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 530, -1));
 
         bRegistrar.setBackground(new java.awt.Color(28, 51, 132));
         bRegistrar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
@@ -181,11 +180,11 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 530, 10));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 720, 20));
 
-        imWaiter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/waiter.png"))); // NOI18N
-        add(imWaiter, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 420, 350));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wings.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 120, 290, 200));
 
-        imQuestion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/questionMark.png"))); // NOI18N
-        add(imQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 60, 70, 110));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hamburger.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 320, 290, 200));
     }// </editor-fold>//GEN-END:initComponents
 
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
@@ -197,18 +196,17 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
 
     private void bRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRegistrarActionPerformed
       bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
-      pila.push(jtfNombre.getText(),jtfApellido.getText(),jtfPuesto.getText(),
-              Integer.parseInt(jtfEdad.getText()),Integer.parseInt(jtfNumCel.getText()));
+      pila.push(jtfNombre.getText(),jtfTipo.getText(),Integer.parseInt(jtfPrecio.getText()),
+              Integer.parseInt(jtfCal.getText()), jtfSize.getText());
       Mensaje.setForeground(new java.awt.Color(39,237,33));
-      Mensaje.setText("Empleado registrado satisfactoriamente");
-      pila.recorrer();
+      Mensaje.setText("Platillo registrado satisfactoriamente");
     }//GEN-LAST:event_bRegistrarActionPerformed
 
     private void bEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEliminarActionPerformed
       bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
       pila.pop();
       Mensaje.setForeground(new java.awt.Color(204, 0, 0));
-      Mensaje.setText("Empleado eliminado");
+      Mensaje.setText("Usuario eliminado");
     }//GEN-LAST:event_bEliminarActionPerformed
 
 
@@ -218,22 +216,22 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
     private javax.swing.JButton bEliminar;
     private javax.swing.JButton bRegistrar;
     private javax.swing.JButton bVolver;
-    private javax.swing.JLabel imQuestion;
-    private javax.swing.JLabel imWaiter;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTextField jtfApellido;
-    private javax.swing.JTextField jtfEdad;
+    private javax.swing.JTextField jtfCal;
     private javax.swing.JTextField jtfNombre;
-    private javax.swing.JTextField jtfNumCel;
-    private javax.swing.JTextField jtfPuesto;
-    private javax.swing.JLabel txApellido;
-    private javax.swing.JLabel txCel;
-    private javax.swing.JLabel txEdad;
+    private javax.swing.JTextField jtfPrecio;
+    private javax.swing.JTextField jtfSize;
+    private javax.swing.JTextField jtfTipo;
+    private javax.swing.JLabel txCal;
     private javax.swing.JLabel txName;
-    private javax.swing.JLabel txPuesto;
+    private javax.swing.JLabel txPrecio;
+    private javax.swing.JLabel txSize;
+    private javax.swing.JLabel txTipo;
     // End of variables declaration//GEN-END:variables
 }

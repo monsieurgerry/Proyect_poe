@@ -5,13 +5,17 @@ import javax.swing.JPanel;
 
 public class ClienteMenu extends javax.swing.JFrame {
 
-    public static void showPg(JPanel pg) {
+    public void showPg(JPanel pg) {
     pg.setSize(580,700);
     pg.setLocation(0,0);
     Content.removeAll();
     Content.add(pg, BorderLayout.CENTER);
     Content.revalidate();
     Content.repaint();
+    toggleMenu.setVisible(false);
+    toggleButton.setSelected(false);
+    toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_down.png")));
+    Cabeza.setBackground(new java.awt.Color(27,31,37));
   }
 
   public ClienteMenu() {
@@ -255,20 +259,18 @@ public class ClienteMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnFoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFoodActionPerformed
-        // TODO add your handling code here:
+        pgClientFood pg = new pgClientFood();
+        showPg(pg);
     }//GEN-LAST:event_btnFoodActionPerformed
 
     private void btnBeerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBeerActionPerformed
         pgClientBeer pg = new pgClientBeer();
-        toggleMenu.setVisible(false);
-        toggleButton.setSelected(false);
-        toggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu_down.png")));
-        Cabeza.setBackground(new java.awt.Color(27,31,37));
         showPg(pg);
     }//GEN-LAST:event_btnBeerActionPerformed
 
     private void btnWineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWineActionPerformed
-        // TODO add your handling code here:
+        pgClientWine pg = new pgClientWine();
+        showPg(pg);
     }//GEN-LAST:event_btnWineActionPerformed
 
     private void btnOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOutActionPerformed

@@ -52,10 +52,9 @@ public class Ingresar extends javax.swing.JFrame {
   public Ingresar() {
     initComponents();
     setLocationRelativeTo(null);
-    pila = new Pila();
     // pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
     // bebida.pushWine();
-    pila.push("victor", "123"); // TODO: no se agrega como el resto.
+    pila.push("victor", "123"); // NOTA: no se agrega como el resto.
     pila.push("gerardo", "123");
     pila.push("david", "123");
     pila.push("nahomy", "123");
@@ -154,7 +153,7 @@ public class Ingresar extends javax.swing.JFrame {
 
         Mensaje.setFont(new java.awt.Font("FreeSans", 0, 10)); // NOI18N
 
-        iconLog.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/login.png")); // NOI18N
+        iconLog.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -267,10 +266,20 @@ public class Ingresar extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        pgRegistrarEmpleado.pila.push("Victor", "Rodriguez", "Mesero", 22, 44109801);
+        pgRegistrarEmpleado.pila.push("Victor", "Medina", "Gerente", 21, 22101411);
+        pgRegistrarEmpleado.pila.push("Nahomy", "Hernandez", "Publicidad", 21, 10103320);
+
         pgRegistrarBebida.beer.pushBeer("TEST", "", 0, 0, (float)0, "", false);
         pgRegistrarBebida.beer.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
         pgRegistrarBebida.beer.pushBeer("Victoria", "Grupo Modelo", 150, 355, (float)4, "Ambar", true);
         pgRegistrarBebida.beer.pushBeer("Modelo", "Grupo Modelo", 70, 355, (float)4.5, "American Pilsener", false);
+        pgRegistrarBebida.wine.pushWine("TEST", "", 0, 0, (float)0.0, "", "");
+        pgRegistrarBebida.wine.pushWine("Don Julio", "Diageo", 20, 700, (float)40.0, "Tequila", "Mexico");
+        pgRegistrarBebida.wine.pushWine("Casa Madero", "VINICOLA", 5, 700, (float)40.0, "Vino", "Mexico");
+        pgRegistrarBebida.wine.pushWine("Jim Beam", "Jim Beam", 30, 750, (float)40.0, "Whisky", "Estados Unidos");
+
+        pgRegistrarComida.pila.push("Hamburguesa Clasica", "Hamburguesas", 42, 300, "Mediana");
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

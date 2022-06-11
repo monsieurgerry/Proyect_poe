@@ -37,14 +37,14 @@ public class pgVerBebidas extends javax.swing.JPanel {
         bVerTotal.setBackground(new java.awt.Color(28, 51, 132));
         bVerTotal.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVerTotal.setForeground(new java.awt.Color(210, 223, 225));
-        bVerTotal.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1Large_gradient.png")); // NOI18N
+        bVerTotal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bVerTotal.setText("VER TOTAL");
         bVerTotal.setBorder(null);
         bVerTotal.setBorderPainted(false);
         bVerTotal.setContentAreaFilled(false);
         bVerTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bVerTotal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bVerTotal.setRolloverIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1Large_gradientPressed.png")); // NOI18N
+        bVerTotal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVerTotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bVerTotalActionPerformed(evt);
@@ -122,14 +122,14 @@ public class pgVerBebidas extends javax.swing.JPanel {
         bVolver.setBackground(new java.awt.Color(28, 51, 132));
         bVolver.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
         bVolver.setForeground(new java.awt.Color(210, 223, 225));
-        bVolver.setIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1Large_gradient.png")); // NOI18N
+        bVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
         bVolver.setText("VOLVER");
         bVolver.setBorder(null);
         bVolver.setBorderPainted(false);
         bVolver.setContentAreaFilled(false);
         bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bVolver.setRolloverIcon(new javax.swing.ImageIcon("/home/gerry/Documents/ceti/3Semestre/poe/3parcial/NightProwler/src/main/java/images/btn1Large_gradientPressed.png")); // NOI18N
+        bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bVolverActionPerformed(evt);
@@ -142,7 +142,7 @@ public class pgVerBebidas extends javax.swing.JPanel {
         int totalBeers = pgRegistrarBebida.beer.getNodes();
         int totalWine = pgRegistrarBebida.wine.getNodes();
         int total = totalBeers + totalWine;
-        total--;
+        total=total-2; // Por los test
         JOptionPane.showMessageDialog(this, "Total tipo de bebidas en inventario: " + total);
     }//GEN-LAST:event_bVerTotalActionPerformed
 

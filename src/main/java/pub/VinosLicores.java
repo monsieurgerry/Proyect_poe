@@ -105,7 +105,7 @@ public class VinosLicores extends Bebidas {
       return wineStock;
     }
 
-    public void setWineStock(int beerStock, String name) {
+    public void setWineStock(int wineStock, String name) {
       this.wineStock = wineStock;
       VinosLicores aux = wine;
       while (aux.getNext() != null) {

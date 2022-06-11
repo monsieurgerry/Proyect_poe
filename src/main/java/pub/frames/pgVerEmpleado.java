@@ -1,5 +1,6 @@
 package pub.frames;
 
+import javax.swing.JOptionPane;
 
 public class pgVerEmpleado extends javax.swing.JPanel {
 
@@ -16,6 +17,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         bVolver = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
+        bVerTotal = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(27, 31, 37));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -42,7 +44,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
                 bVolverActionPerformed(evt);
             }
         });
-        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 200, 60));
+        add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 520, 200, 60));
 
         jScrollPane2.setBackground(new java.awt.Color(27, 31, 37));
 
@@ -67,6 +69,24 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         }
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 1070, 230));
+
+        bVerTotal.setBackground(new java.awt.Color(28, 51, 132));
+        bVerTotal.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
+        bVerTotal.setForeground(new java.awt.Color(210, 223, 225));
+        bVerTotal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradient.png"))); // NOI18N
+        bVerTotal.setText("VER TOTAL");
+        bVerTotal.setBorder(null);
+        bVerTotal.setBorderPainted(false);
+        bVerTotal.setContentAreaFilled(false);
+        bVerTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVerTotal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bVerTotal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
+        bVerTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVerTotalActionPerformed(evt);
+            }
+        });
+        add(bVerTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 520, 190, 60));
     }// </editor-fold>//GEN-END:initComponents
 
     private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
@@ -75,9 +95,15 @@ public class pgVerEmpleado extends javax.swing.JPanel {
       this.setVisible(false);
     }//GEN-LAST:event_bVolverActionPerformed
 
+    private void bVerTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVerTotalActionPerformed
+        int total = pgRegistrarEmpleado.pila.getNodes();
+        JOptionPane.showMessageDialog(this, "Cantidad de empleados: " + total);
+    }//GEN-LAST:event_bVerTotalActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JTable Table;
+    private javax.swing.JButton bVerTotal;
     private javax.swing.JButton bVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;

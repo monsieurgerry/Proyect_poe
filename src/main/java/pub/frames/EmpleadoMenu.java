@@ -158,8 +158,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void comidaRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comidaRegistrarActionPerformed
-      // pgRegistrarComida pg = new pgRegistrarComida();
-      // showPanel(pg);
+      pgRegistrarComida pg = new pgRegistrarComida();
+      showPanel(pg);
     }//GEN-LAST:event_comidaRegistrarActionPerformed
 
     private void empleadoRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadoRegistrarActionPerformed
@@ -189,8 +189,8 @@ public class EmpleadoMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_bebidasVerActionPerformed
 
     private void comidaVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comidaVerActionPerformed
-      // pgVerComida pg = new pgVerComida();
-      // showPanel(pg);
+      pgVerComida pg = new pgVerComida();
+      showPanel(pg);
     }//GEN-LAST:event_comidaVerActionPerformed
 
     public static void main(String args[]) {
