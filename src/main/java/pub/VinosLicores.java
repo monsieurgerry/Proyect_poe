@@ -26,7 +26,9 @@ public class VinosLicores extends Bebidas {
   public void setNext(VinosLicores next) { this.next = next; }
 
   public static class Pila {
-    VinosLicores wine;
+    private int wineStock;
+
+    public VinosLicores wine;
     private int cantNodos;
 
     public Pila() {
@@ -91,5 +93,27 @@ public class VinosLicores extends Bebidas {
 
     public int getNodes() { return cantNodos; }
     public void setNodes(int cantNodos) { this.cantNodos = cantNodos; }
+
+    public int getWineStock(String name) {
+      VinosLicores aux = wine;
+      while (aux.getNext() != null) {
+        if (name.equals(aux.getNombre())) {
+          wineStock = aux.getCantidad();
+        }
+        aux = aux.getNext();
+      }
+      return wineStock;
+    }
+
+    public void setWineStock(int beerStock, String name) {
+      this.wineStock = wineStock;
+      VinosLicores aux = wine;
+      while (aux.getNext() != null) {
+        if (name.equals(aux.getNombre())) {
+          aux.setCantidad(wineStock);
+        }
+        aux = aux.getNext();
+      }
+    }
   }
 }

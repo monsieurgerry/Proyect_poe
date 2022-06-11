@@ -142,6 +142,7 @@ public class pgVerBebidas extends javax.swing.JPanel {
         int totalBeers = pgRegistrarBebida.beer.getNodes();
         int totalWine = pgRegistrarBebida.wine.getNodes();
         int total = totalBeers + totalWine;
+        total--;
         JOptionPane.showMessageDialog(this, "Total tipo de bebidas en inventario: " + total);
     }//GEN-LAST:event_bVerTotalActionPerformed
 

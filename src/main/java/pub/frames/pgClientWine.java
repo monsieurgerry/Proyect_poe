@@ -3,16 +3,13 @@ package pub.frames;
 import pub.frames.pgInicio;
 import pub.frames.pgRegistrarBebida;
 
-public class pgClientBeer extends javax.swing.JPanel {
+public class pgClientWine extends javax.swing.JPanel {
 
     public static int[] contador = new int[6];
-    public String[] beerName = {
-        "Corona",
-        "Victoria",
-        "Pacifico",
-        "Modelo",
-        "Miller",
-        "Heineken"
+    public String[] wineNames = {
+        "Don Julio",
+        "Casa Madero",
+        "Jim Beam",
     };
     private int dismunirStock, stock;
     private String name;
@@ -24,12 +21,9 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtContador.setText("");
         txtContador1.setText("");
         txtContador2.setText("");
-        txtContador3.setText("");
-        txtContador4.setText("");
-        txtContador5.setText("");
     }
 
-    public pgClientBeer() {
+    public pgClientWine() {
         initComponents();
     }
 
@@ -48,37 +42,28 @@ public class pgClientBeer extends javax.swing.JPanel {
         img2 = new javax.swing.JLabel();
         txtName2 = new javax.swing.JLabel();
         txtContador2 = new javax.swing.JLabel();
-        img3 = new javax.swing.JLabel();
-        txtName3 = new javax.swing.JLabel();
-        img4 = new javax.swing.JLabel();
-        txtName4 = new javax.swing.JLabel();
         txtContador3 = new javax.swing.JLabel();
         txtContador4 = new javax.swing.JLabel();
-        img5 = new javax.swing.JLabel();
-        txtName5 = new javax.swing.JLabel();
         txtContador5 = new javax.swing.JLabel();
         txtTitulo = new javax.swing.JLabel();
         btnMinus1 = new javax.swing.JButton();
         btnPlus1 = new javax.swing.JButton();
         btnMinus2 = new javax.swing.JButton();
         btnPlus2 = new javax.swing.JButton();
-        btnMinus3 = new javax.swing.JButton();
-        btnPlus3 = new javax.swing.JButton();
-        btnMinus4 = new javax.swing.JButton();
-        btnPlus4 = new javax.swing.JButton();
-        btnMinus5 = new javax.swing.JButton();
-        btnPlus5 = new javax.swing.JButton();
         jbBorrar = new javax.swing.JButton();
         jbPedir = new javax.swing.JButton();
         Mensaje = new javax.swing.JLabel();
+        txtName3 = new javax.swing.JLabel();
+        txtName4 = new javax.swing.JLabel();
+        txtName5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(27, 31, 37));
         setPreferredSize(new java.awt.Dimension(580, 700));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         img.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_corona.png"))); // NOI18N
-        add(img, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 50, 150));
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine_donJulio.png"))); // NOI18N
+        add(img, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 120, 170));
 
         btnMinus.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus.setForeground(new java.awt.Color(73, 168, 245));
@@ -96,7 +81,7 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnMinusActionPerformed(evt);
             }
         });
-        add(btnMinus, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 40, 40));
+        add(btnMinus, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 40, 40));
 
         btnPlus.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus.setForeground(new java.awt.Color(73, 168, 245));
@@ -114,66 +99,52 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnPlusActionPerformed(evt);
             }
         });
-        add(btnPlus, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 40, 40));
+        add(btnPlus, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, 40, 40));
 
+        txtName.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtName.setForeground(new java.awt.Color(204, 204, 204));
         txtName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName.setText("Victoria 355ml");
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 100, -1));
+        txtName.setText("Casa Madero 3V");
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 130, -1));
 
         img1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_victoria.png"))); // NOI18N
-        add(img1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 70, 50, 150));
+        img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine_casaMadero.png"))); // NOI18N
+        add(img1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 50, 170));
 
-        txtName1.setForeground(new java.awt.Color(204, 204, 204));
+        txtName1.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName1.setForeground(new java.awt.Color(102, 102, 102));
         txtName1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName1.setText("Corona extra 355ml");
-        add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 130, -1));
+        txtName1.setText("WHISKY");
+        txtName1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 130, -1));
 
         txtContador.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador.setForeground(new java.awt.Color(73, 168, 245));
         txtContador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtContador.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtContador, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 30, 15));
+        add(txtContador, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 30, 15));
 
         txtContador1.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador1.setForeground(new java.awt.Color(73, 168, 245));
         txtContador1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtContador1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtContador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 30, 15));
+        add(txtContador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 30, 15));
 
         img2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_pacifico.png"))); // NOI18N
-        add(img2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 50, 150));
+        img2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine_jimBeam.png"))); // NOI18N
+        add(img2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 50, 170));
 
+        txtName2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtName2.setForeground(new java.awt.Color(204, 204, 204));
         txtName2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName2.setText("Pacifico 355ml");
-        add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, 100, -1));
+        txtName2.setText("Jim Beam");
+        add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 110, -1));
 
         txtContador2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador2.setForeground(new java.awt.Color(73, 168, 245));
         txtContador2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtContador2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtContador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 30, 15));
-
-        img3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_modelo.png"))); // NOI18N
-        add(img3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 60, 150));
-
-        txtName3.setForeground(new java.awt.Color(204, 204, 204));
-        txtName3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName3.setText("Miller 945ml");
-        add(txtName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 510, 100, -1));
-
-        img4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_miller.png"))); // NOI18N
-        add(img4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 50, 150));
-
-        txtName4.setForeground(new java.awt.Color(204, 204, 204));
-        txtName4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName4.setText("Modelo especial 355ml");
-        add(txtName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 150, -1));
+        add(txtContador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 390, 30, 15));
 
         txtContador3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador3.setForeground(new java.awt.Color(73, 168, 245));
@@ -187,15 +158,6 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtContador4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtContador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 30, 15));
 
-        img5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        img5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer_heineken.png"))); // NOI18N
-        add(img5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 50, 150));
-
-        txtName5.setForeground(new java.awt.Color(204, 204, 204));
-        txtName5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtName5.setText("Heineken 355ml");
-        add(txtName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 510, 120, -1));
-
         txtContador5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         txtContador5.setForeground(new java.awt.Color(73, 168, 245));
         txtContador5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -205,8 +167,8 @@ public class pgClientBeer extends javax.swing.JPanel {
         txtTitulo.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         txtTitulo.setForeground(new java.awt.Color(188, 183, 174));
         txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtTitulo.setText("CERVEZAS");
-        add(txtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 550, 40));
+        txtTitulo.setText("VINOS & LICORES");
+        add(txtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 550, 40));
 
         btnMinus1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus1.setForeground(new java.awt.Color(73, 168, 245));
@@ -224,7 +186,7 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnMinus1ActionPerformed(evt);
             }
         });
-        add(btnMinus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 40, 40));
+        add(btnMinus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 40, 40));
 
         btnPlus1.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus1.setForeground(new java.awt.Color(73, 168, 245));
@@ -242,7 +204,7 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnPlus1ActionPerformed(evt);
             }
         });
-        add(btnPlus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 40, 40));
+        add(btnPlus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 40, 40));
 
         btnMinus2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         btnMinus2.setForeground(new java.awt.Color(73, 168, 245));
@@ -260,7 +222,7 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnMinus2ActionPerformed(evt);
             }
         });
-        add(btnMinus2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 40, 40));
+        add(btnMinus2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 340, 40, 40));
 
         btnPlus2.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         btnPlus2.setForeground(new java.awt.Color(73, 168, 245));
@@ -278,115 +240,7 @@ public class pgClientBeer extends javax.swing.JPanel {
                 btnPlus2ActionPerformed(evt);
             }
         });
-        add(btnPlus2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, 40, 40));
-
-        btnMinus3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        btnMinus3.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnMinus3.setText("");
-        btnMinus3.setBorder(null);
-        btnMinus3.setBorderPainted(false);
-        btnMinus3.setContentAreaFilled(false);
-        btnMinus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnMinus3.setFocusPainted(false);
-        btnMinus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnMinus3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMinus3ActionPerformed(evt);
-            }
-        });
-        add(btnMinus3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 40, 40));
-
-        btnPlus3.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
-        btnPlus3.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnPlus3.setText("");
-        btnPlus3.setBorder(null);
-        btnPlus3.setBorderPainted(false);
-        btnPlus3.setContentAreaFilled(false);
-        btnPlus3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPlus3.setFocusPainted(false);
-        btnPlus3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnPlus3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPlus3ActionPerformed(evt);
-            }
-        });
-        add(btnPlus3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 40, 40));
-
-        btnMinus4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        btnMinus4.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnMinus4.setText("");
-        btnMinus4.setBorder(null);
-        btnMinus4.setBorderPainted(false);
-        btnMinus4.setContentAreaFilled(false);
-        btnMinus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnMinus4.setFocusPainted(false);
-        btnMinus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnMinus4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMinus4ActionPerformed(evt);
-            }
-        });
-        add(btnMinus4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 540, 40, 40));
-
-        btnPlus4.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
-        btnPlus4.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnPlus4.setText("");
-        btnPlus4.setBorder(null);
-        btnPlus4.setBorderPainted(false);
-        btnPlus4.setContentAreaFilled(false);
-        btnPlus4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPlus4.setFocusPainted(false);
-        btnPlus4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnPlus4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPlus4ActionPerformed(evt);
-            }
-        });
-        add(btnPlus4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 540, 40, 40));
-
-        btnMinus5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        btnMinus5.setForeground(new java.awt.Color(73, 168, 245));
-        btnMinus5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnMinus5.setText("");
-        btnMinus5.setBorder(null);
-        btnMinus5.setBorderPainted(false);
-        btnMinus5.setContentAreaFilled(false);
-        btnMinus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnMinus5.setFocusPainted(false);
-        btnMinus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnMinus5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnMinus5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMinus5ActionPerformed(evt);
-            }
-        });
-        add(btnMinus5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 540, 40, 40));
-
-        btnPlus5.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
-        btnPlus5.setForeground(new java.awt.Color(73, 168, 245));
-        btnPlus5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradient.png"))); // NOI18N
-        btnPlus5.setText("");
-        btnPlus5.setBorder(null);
-        btnPlus5.setBorderPainted(false);
-        btnPlus5.setContentAreaFilled(false);
-        btnPlus5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPlus5.setFocusPainted(false);
-        btnPlus5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPlus5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn2_gradientPressed.png"))); // NOI18N
-        btnPlus5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPlus5ActionPerformed(evt);
-            }
-        });
-        add(btnPlus5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, 40, 40));
+        add(btnPlus2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 40, 40));
 
         jbBorrar.setBackground(new java.awt.Color(28, 51, 132));
         jbBorrar.setFont(new java.awt.Font("FreeSans", 0, 13)); // NOI18N
@@ -428,6 +282,27 @@ public class pgClientBeer extends javax.swing.JPanel {
         Mensaje.setForeground(new java.awt.Color(0, 153, 0));
         Mensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 630, 260, 40));
+
+        txtName3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        txtName3.setForeground(new java.awt.Color(204, 204, 204));
+        txtName3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName3.setText("Don Julio 70");
+        txtName3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 130, -1));
+
+        txtName4.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName4.setForeground(new java.awt.Color(102, 102, 102));
+        txtName4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName4.setText("TEQUILA");
+        txtName4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 130, -1));
+
+        txtName5.setFont(new java.awt.Font("sansserif", 0, 10)); // NOI18N
+        txtName5.setForeground(new java.awt.Color(102, 102, 102));
+        txtName5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtName5.setText("VINO TINTO");
+        txtName5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 130, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusActionPerformed
@@ -444,21 +319,6 @@ public class pgClientBeer extends javax.swing.JPanel {
         contador[2]++;
         txtContador2.setText(Integer.toString(contador[2]));
     }//GEN-LAST:event_btnPlus2ActionPerformed
-
-    private void btnPlus3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus3ActionPerformed
-        contador[3]++;
-        txtContador3.setText(Integer.toString(contador[3]));
-    }//GEN-LAST:event_btnPlus3ActionPerformed
-
-    private void btnPlus4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus4ActionPerformed
-        contador[4]++;
-        txtContador4.setText(Integer.toString(contador[4]));
-    }//GEN-LAST:event_btnPlus4ActionPerformed
-
-    private void btnPlus5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlus5ActionPerformed
-        contador[5]++;
-        txtContador5.setText(Integer.toString(contador[5]));
-    }//GEN-LAST:event_btnPlus5ActionPerformed
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinusActionPerformed
         if (contador[0] > 0) {
@@ -487,33 +347,6 @@ public class pgClientBeer extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnMinus2ActionPerformed
 
-    private void btnMinus3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus3ActionPerformed
-        if (contador[3] > 0) {
-            contador[3]--;
-            txtContador.setText(Integer.toString(contador[3]));
-        } else {
-            txtContador.setText(Integer.toString(contador[3]));
-        }
-    }//GEN-LAST:event_btnMinus3ActionPerformed
-
-    private void btnMinus4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus4ActionPerformed
-        if (contador[4] > 0) {
-            contador[4]--;
-            txtContador.setText(Integer.toString(contador[4]));
-        } else {
-            txtContador.setText(Integer.toString(contador[4]));
-        }
-    }//GEN-LAST:event_btnMinus4ActionPerformed
-
-    private void btnMinus5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinus5ActionPerformed
-        if (contador[5] > 0) {
-            contador[5]--;
-            txtContador.setText(Integer.toString(contador[5]));
-        } else {
-            txtContador.setText(Integer.toString(contador[5]));
-        }
-    }//GEN-LAST:event_btnMinus5ActionPerformed
-
     private void jbBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBorrarActionPerformed
         limpiarContador();
     }//GEN-LAST:event_jbBorrarActionPerformed
@@ -521,12 +354,16 @@ public class pgClientBeer extends javax.swing.JPanel {
     private void jbPedirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPedirActionPerformed
         for (int i=0; i<contador.length; i++) {
             if (contador[i] > 0) {
-                name = beerName[i];
-                stock = pgRegistrarBebida.beer.getBeerStock(name);
-                dismunirStock = stock-contador[i];
+                name = wineNames[i];
+                if (pgRegistrarBebida.wine.getWineStock(name) <= 0) {
+                    Mensaje.setText("No hay stock disponible");
+                } else {
+                    stock = pgRegistrarBebida.wine.getWineStock(name);
+                    dismunirStock = stock-contador[i];
+                }
             }
         }
-        pgRegistrarBebida.beer.setBeerStock(dismunirStock, name);
+        pgRegistrarBebida.wine.setWineStock(dismunirStock, name);
         limpiarContador(); // NOTA: Antes de limpiar hacer el pedido
         Mensaje.setText("Su pedido fue enviado satisfactoriamente!");
     }//GEN-LAST:event_jbPedirActionPerformed
@@ -536,21 +373,12 @@ public class pgClientBeer extends javax.swing.JPanel {
     private javax.swing.JButton btnMinus;
     private javax.swing.JButton btnMinus1;
     private javax.swing.JButton btnMinus2;
-    private javax.swing.JButton btnMinus3;
-    private javax.swing.JButton btnMinus4;
-    private javax.swing.JButton btnMinus5;
     private javax.swing.JButton btnPlus;
     private javax.swing.JButton btnPlus1;
     private javax.swing.JButton btnPlus2;
-    private javax.swing.JButton btnPlus3;
-    private javax.swing.JButton btnPlus4;
-    private javax.swing.JButton btnPlus5;
     private javax.swing.JLabel img;
     private javax.swing.JLabel img1;
     private javax.swing.JLabel img2;
-    private javax.swing.JLabel img3;
-    private javax.swing.JLabel img4;
-    private javax.swing.JLabel img5;
     private javax.swing.JButton jbBorrar;
     private javax.swing.JButton jbPedir;
     private javax.swing.JLabel txtContador;

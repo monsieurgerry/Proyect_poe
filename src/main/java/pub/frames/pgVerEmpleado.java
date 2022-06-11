@@ -1,7 +1,5 @@
 package pub.frames;
 
-import javax.swing.table.DefaultTableModel;
-
 
 public class pgVerEmpleado extends javax.swing.JPanel {
 
