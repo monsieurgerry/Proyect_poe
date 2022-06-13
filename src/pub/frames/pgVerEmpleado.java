@@ -19,7 +19,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         Table = new javax.swing.JTable();
         bVerTotal = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(27, 31, 37));
+        setBackground(new java.awt.Color(39, 49, 55));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("SF Pro Text", 1, 48)); // NOI18N
@@ -36,7 +36,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         bVolver.setBorder(null);
         bVolver.setBorderPainted(false);
         bVolver.setContentAreaFilled(false);
-        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class pgVerEmpleado extends javax.swing.JPanel {
         bVerTotal.setBorder(null);
         bVerTotal.setBorderPainted(false);
         bVerTotal.setContentAreaFilled(false);
-        bVerTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVerTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bVerTotal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bVerTotal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVerTotal.addActionListener(new java.awt.event.ActionListener() {

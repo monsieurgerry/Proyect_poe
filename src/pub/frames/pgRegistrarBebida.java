@@ -77,7 +77,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         wineOrigen = new javax.swing.JTextField();
         jSeparator19 = new javax.swing.JSeparator();
 
-        setBackground(new java.awt.Color(27, 31, 37));
+        setBackground(new java.awt.Color(39, 49, 55));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Title.setBackground(new java.awt.Color(188, 183, 174));
@@ -94,7 +94,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         bRegistrar.setBorder(null);
         bRegistrar.setBorderPainted(false);
         bRegistrar.setContentAreaFilled(false);
-        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bRegistrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         bEliminar.setBorder(null);
         bEliminar.setBorderPainted(false);
         bEliminar.setContentAreaFilled(false);
-        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bEliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -130,7 +130,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         bVolver.setBorder(null);
         bVolver.setBorderPainted(false);
         bVolver.setContentAreaFilled(false);
-        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -139,6 +139,8 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
             }
         });
         add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 510, 200, 50));
+
+        Mensaje.setBackground(new java.awt.Color(39, 49, 55));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 720, 20));
 
         grupoBebidas.add(jrbWine);
@@ -163,13 +165,15 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         });
         add(jrbBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 110, 30));
 
+        imgWine.setBackground(new java.awt.Color(39, 49, 55));
         imgWine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/wine.png"))); // NOI18N
         add(imgWine, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, 40, 60));
 
+        imgBeer.setBackground(new java.awt.Color(39, 49, 55));
         imgBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/beer.png"))); // NOI18N
         add(imgBeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 50, 60));
 
-        beerPanel.setBackground(new java.awt.Color(27, 31, 37));
+        beerPanel.setBackground(new java.awt.Color(39, 49, 55));
 
         txBName.setBackground(new java.awt.Color(188, 183, 174));
         txBName.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
@@ -196,39 +200,44 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         txBInventario.setForeground(new java.awt.Color(188, 183, 174));
         txBInventario.setText("Cantidad en inventario:");
 
-        beerName.setBackground(new java.awt.Color(27, 31, 37));
+        beerName.setBackground(new java.awt.Color(39, 49, 55));
         beerName.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerName.setForeground(new java.awt.Color(204, 204, 204));
         beerName.setBorder(null);
 
-        beerMarca.setBackground(new java.awt.Color(27, 31, 37));
+        beerMarca.setBackground(new java.awt.Color(39, 49, 55));
         beerMarca.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerMarca.setForeground(new java.awt.Color(204, 204, 204));
         beerMarca.setBorder(null);
 
-        beerLitros.setBackground(new java.awt.Color(27, 31, 37));
+        beerLitros.setBackground(new java.awt.Color(39, 49, 55));
         beerLitros.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerLitros.setForeground(new java.awt.Color(204, 204, 204));
         beerLitros.setBorder(null);
 
-        beerAlcohol.setBackground(new java.awt.Color(27, 31, 37));
+        beerAlcohol.setBackground(new java.awt.Color(39, 49, 55));
         beerAlcohol.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerAlcohol.setForeground(new java.awt.Color(204, 204, 204));
         beerAlcohol.setBorder(null);
 
-        beerInventario.setBackground(new java.awt.Color(27, 31, 37));
+        beerInventario.setBackground(new java.awt.Color(39, 49, 55));
         beerInventario.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerInventario.setForeground(new java.awt.Color(204, 204, 204));
         beerInventario.setBorder(null);
 
+        jSeparator1.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator1.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator2.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator2.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator3.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator3.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator4.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator4.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator5.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator5.setForeground(new java.awt.Color(73, 168, 245));
 
         txBEstilo.setBackground(new java.awt.Color(188, 183, 174));
@@ -236,11 +245,12 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         txBEstilo.setForeground(new java.awt.Color(188, 183, 174));
         txBEstilo.setText("Estilo de cerveza:");
 
-        beerEstilo.setBackground(new java.awt.Color(27, 31, 37));
+        beerEstilo.setBackground(new java.awt.Color(39, 49, 55));
         beerEstilo.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         beerEstilo.setForeground(new java.awt.Color(204, 204, 204));
         beerEstilo.setBorder(null);
 
+        jSeparator11.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator11.setForeground(new java.awt.Color(73, 168, 245));
 
         txBEnvace.setBackground(new java.awt.Color(188, 183, 174));
@@ -297,7 +307,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
                                 .addComponent(txBEnvace)
                                 .addGap(53, 53, 53)
                                 .addComponent(beerEnvace)))
-                        .addGap(0, 1, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         beerPanelLayout.setVerticalGroup(
@@ -355,7 +365,7 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
 
         add(beerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 430, 290));
 
-        winePanel.setBackground(new java.awt.Color(27, 31, 37));
+        winePanel.setBackground(new java.awt.Color(39, 49, 55));
 
         txWName.setBackground(new java.awt.Color(188, 183, 174));
         txWName.setFont(new java.awt.Font("SF Pro Display", 0, 18)); // NOI18N
@@ -382,39 +392,44 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         txWInventario.setForeground(new java.awt.Color(188, 183, 174));
         txWInventario.setText("Cantidad en inventario:");
 
-        wineName.setBackground(new java.awt.Color(27, 31, 37));
+        wineName.setBackground(new java.awt.Color(39, 49, 55));
         wineName.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineName.setForeground(new java.awt.Color(204, 204, 204));
         wineName.setBorder(null);
 
-        wineMarca.setBackground(new java.awt.Color(27, 31, 37));
+        wineMarca.setBackground(new java.awt.Color(39, 49, 55));
         wineMarca.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineMarca.setForeground(new java.awt.Color(204, 204, 204));
         wineMarca.setBorder(null);
 
-        wineLitros.setBackground(new java.awt.Color(27, 31, 37));
+        wineLitros.setBackground(new java.awt.Color(39, 49, 55));
         wineLitros.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineLitros.setForeground(new java.awt.Color(204, 204, 204));
         wineLitros.setBorder(null);
 
-        wineAlcohol.setBackground(new java.awt.Color(27, 31, 37));
+        wineAlcohol.setBackground(new java.awt.Color(39, 49, 55));
         wineAlcohol.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineAlcohol.setForeground(new java.awt.Color(204, 204, 204));
         wineAlcohol.setBorder(null);
 
-        wineInventario.setBackground(new java.awt.Color(27, 31, 37));
+        wineInventario.setBackground(new java.awt.Color(39, 49, 55));
         wineInventario.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineInventario.setForeground(new java.awt.Color(204, 204, 204));
         wineInventario.setBorder(null);
 
+        jSeparator13.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator13.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator14.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator14.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator15.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator15.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator16.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator16.setForeground(new java.awt.Color(73, 168, 245));
 
+        jSeparator17.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator17.setForeground(new java.awt.Color(73, 168, 245));
 
         txWTipo.setBackground(new java.awt.Color(188, 183, 174));
@@ -422,11 +437,12 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         txWTipo.setForeground(new java.awt.Color(188, 183, 174));
         txWTipo.setText("Tipo de alcohol:");
 
-        wineTipo.setBackground(new java.awt.Color(27, 31, 37));
+        wineTipo.setBackground(new java.awt.Color(39, 49, 55));
         wineTipo.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineTipo.setForeground(new java.awt.Color(204, 204, 204));
         wineTipo.setBorder(null);
 
+        jSeparator18.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator18.setForeground(new java.awt.Color(73, 168, 245));
 
         txWOrigen.setBackground(new java.awt.Color(188, 183, 174));
@@ -434,11 +450,12 @@ public class pgRegistrarBebida extends javax.swing.JPanel {
         txWOrigen.setForeground(new java.awt.Color(188, 183, 174));
         txWOrigen.setText("Lugar de origen:");
 
-        wineOrigen.setBackground(new java.awt.Color(27, 31, 37));
+        wineOrigen.setBackground(new java.awt.Color(39, 49, 55));
         wineOrigen.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         wineOrigen.setForeground(new java.awt.Color(204, 204, 204));
         wineOrigen.setBorder(null);
 
+        jSeparator19.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator19.setForeground(new java.awt.Color(73, 168, 245));
 
         javax.swing.GroupLayout winePanelLayout = new javax.swing.GroupLayout(winePanel);
