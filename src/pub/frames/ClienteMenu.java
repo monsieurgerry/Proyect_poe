@@ -1,6 +1,7 @@
 package pub.frames;
 
 import java.awt.BorderLayout;
+import java.awt.Toolkit;
 import javax.swing.JPanel;
 
 public class ClienteMenu extends javax.swing.JFrame {
@@ -21,6 +22,7 @@ public class ClienteMenu extends javax.swing.JFrame {
   public ClienteMenu() {
     initComponents();
     setLocationRelativeTo(null);
+    setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/Logo_toolkit.png")));
     toggleMenu.setVisible(false);
   }
 
@@ -44,6 +46,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut = new javax.swing.JButton();
         Content = new javax.swing.JPanel();
         txtTitulo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -55,8 +58,8 @@ public class ClienteMenu extends javax.swing.JFrame {
         Cabeza.setBackground(new java.awt.Color(27, 31, 37));
 
         pubIcon.setFont(new java.awt.Font("JetBrainsMono Nerd Font Mono", 1, 48)); // NOI18N
-        pubIcon.setForeground(new java.awt.Color(73, 168, 245));
-        pubIcon.setText("NP");
+        pubIcon.setForeground(new java.awt.Color(240, 140, 227));
+        pubIcon.setText("NP");
 
         toggleButton.setFont(new java.awt.Font("JetBrainsMono Nerd Font Mono", 0, 48)); // NOI18N
         toggleButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -65,7 +68,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         toggleButton.setBorder(null);
         toggleButton.setBorderPainted(false);
         toggleButton.setContentAreaFilled(false);
-        toggleButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        toggleButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         toggleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 toggleButtonActionPerformed(evt);
@@ -79,9 +82,9 @@ public class ClienteMenu extends javax.swing.JFrame {
             .addGroup(CabezaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(toggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 428, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 438, Short.MAX_VALUE)
                 .addComponent(pubIcon)
-                .addGap(14, 14, 14))
+                .addGap(24, 24, 24))
         );
         CabezaLayout.setVerticalGroup(
             CabezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -104,7 +107,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnFood.setText("Comidas");
         btnFood.setBorderPainted(false);
         btnFood.setContentAreaFilled(false);
-        btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnFood.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnFood.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnFood.setIconTextGap(18);
         btnFood.setVerifyInputWhenFocusTarget(false);
@@ -128,7 +131,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnBeer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gradient_beer.png"))); // NOI18N
         btnBeer.setText("Cervezas");
         btnBeer.setContentAreaFilled(false);
-        btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBeer.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnBeer.setDefaultCapable(false);
         btnBeer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnBeer.setIconTextGap(15);
@@ -154,7 +157,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnWine.setText("Vinos & Licores");
         btnWine.setBorderPainted(false);
         btnWine.setContentAreaFilled(false);
-        btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnWine.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnWine.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnWine.setIconTextGap(12);
         btnWine.setVerifyInputWhenFocusTarget(false);
@@ -179,7 +182,7 @@ public class ClienteMenu extends javax.swing.JFrame {
         btnOut.setText("Salir");
         btnOut.setBorderPainted(false);
         btnOut.setContentAreaFilled(false);
-        btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnOut.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnOut.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnOut.setIconTextGap(15);
         btnOut.setVerifyInputWhenFocusTarget(false);
@@ -229,28 +232,36 @@ public class ClienteMenu extends javax.swing.JFrame {
 
         getContentPane().add(toggleMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 580, -1));
 
-        Content.setBackground(new java.awt.Color(27, 31, 37));
+        Content.setBackground(new java.awt.Color(39, 49, 55));
 
         txtTitulo.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
-        txtTitulo.setForeground(new java.awt.Color(73, 168, 245));
+        txtTitulo.setForeground(new java.awt.Color(61, 216, 252));
         txtTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTitulo.setText("Welcome");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
 
         javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
         Content.setLayout(ContentLayout);
         ContentLayout.setHorizontalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ContentLayout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
             .addGroup(ContentLayout.createSequentialGroup()
-                .addGap(123, 123, 123)
+                .addGap(127, 127, 127)
                 .addComponent(txtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ContentLayout.setVerticalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ContentLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(26, 26, 26)
                 .addComponent(txtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(582, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(102, Short.MAX_VALUE))
         );
 
         getContentPane().add(Content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 48, 580, 700));
@@ -368,6 +379,7 @@ public class ClienteMenu extends javax.swing.JFrame {
     private javax.swing.JButton btnFood;
     private javax.swing.JButton btnOut;
     private javax.swing.JButton btnWine;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel pubIcon;
     private javax.swing.JToggleButton toggleButton;

@@ -1,6 +1,7 @@
 package pub.frames;
 
 import java.awt.BorderLayout;
+import java.awt.Toolkit;
 import javax.swing.JPanel;
 
 public class EmpleadoMenu extends javax.swing.JFrame {
@@ -17,6 +18,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
   public EmpleadoMenu() {
     initComponents();
     setLocationRelativeTo(null);
+    setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/Logo_toolkit.png")));
     pgInicio inicio = new pgInicio();
     showPanel(inicio);
   }
@@ -51,7 +53,7 @@ public class EmpleadoMenu extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        Background.setBackground(new java.awt.Color(27, 31, 37));
+        Background.setBackground(new java.awt.Color(39, 49, 55));
         Background.setPreferredSize(new java.awt.Dimension(1200, 720));
 
         javax.swing.GroupLayout BackgroundLayout = new javax.swing.GroupLayout(Background);

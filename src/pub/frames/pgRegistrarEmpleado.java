@@ -42,10 +42,10 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         imWaiter = new javax.swing.JLabel();
         imQuestion = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(27, 31, 37));
+        setBackground(new java.awt.Color(39, 49, 55));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Title.setBackground(new java.awt.Color(188, 183, 174));
+        Title.setBackground(new java.awt.Color(39, 49, 55));
         Title.setFont(new java.awt.Font("SF Pro Display", 1, 48)); // NOI18N
         Title.setForeground(new java.awt.Color(188, 183, 174));
         Title.setText("REGISTRO DE EMPLEADO");
@@ -81,31 +81,31 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         txCel.setText("Numero de celular:");
         add(txCel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
 
-        jtfNombre.setBackground(new java.awt.Color(27, 31, 37));
+        jtfNombre.setBackground(new java.awt.Color(39, 49, 55));
         jtfNombre.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfNombre.setForeground(new java.awt.Color(204, 204, 204));
         jtfNombre.setBorder(null);
         add(jtfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 530, -1));
 
-        jtfApellido.setBackground(new java.awt.Color(27, 31, 37));
+        jtfApellido.setBackground(new java.awt.Color(39, 49, 55));
         jtfApellido.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfApellido.setForeground(new java.awt.Color(204, 204, 204));
         jtfApellido.setBorder(null);
         add(jtfApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 530, -1));
 
-        jtfPuesto.setBackground(new java.awt.Color(27, 31, 37));
+        jtfPuesto.setBackground(new java.awt.Color(39, 49, 55));
         jtfPuesto.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfPuesto.setForeground(new java.awt.Color(204, 204, 204));
         jtfPuesto.setBorder(null);
         add(jtfPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 530, -1));
 
-        jtfEdad.setBackground(new java.awt.Color(27, 31, 37));
+        jtfEdad.setBackground(new java.awt.Color(39, 49, 55));
         jtfEdad.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfEdad.setForeground(new java.awt.Color(204, 204, 204));
         jtfEdad.setBorder(null);
         add(jtfEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 530, -1));
 
-        jtfNumCel.setBackground(new java.awt.Color(27, 31, 37));
+        jtfNumCel.setBackground(new java.awt.Color(39, 49, 55));
         jtfNumCel.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfNumCel.setForeground(new java.awt.Color(204, 204, 204));
         jtfNumCel.setBorder(null);
@@ -119,7 +119,7 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         bRegistrar.setBorder(null);
         bRegistrar.setBorderPainted(false);
         bRegistrar.setContentAreaFilled(false);
-        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bRegistrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +137,7 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         bEliminar.setBorder(null);
         bEliminar.setBorderPainted(false);
         bEliminar.setContentAreaFilled(false);
-        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bEliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         bVolver.setBorder(null);
         bVolver.setBorderPainted(false);
         bVolver.setContentAreaFilled(false);
-        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -165,20 +165,27 @@ public class pgRegistrarEmpleado extends javax.swing.JPanel {
         });
         add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 200, 60));
 
+        jSeparator1.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator1.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 530, -1));
 
+        jSeparator2.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator2.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 530, 10));
 
+        jSeparator3.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator3.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 530, 10));
 
+        jSeparator4.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator4.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 530, 10));
 
+        jSeparator5.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator5.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 530, 10));
+
+        Mensaje.setBackground(new java.awt.Color(39, 49, 55));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 720, 20));
 
         imWaiter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/waiter.png"))); // NOI18N

@@ -27,8 +27,9 @@ public class pgInicio extends javax.swing.JPanel {
     private void initComponents() {
 
         txtWelcome1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(27, 31, 37));
+        setBackground(new java.awt.Color(39, 49, 55));
         setPreferredSize(new java.awt.Dimension(1196, 715));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -37,11 +38,15 @@ public class pgInicio extends javax.swing.JPanel {
         txtWelcome1.setForeground(new java.awt.Color(188, 183, 174));
         txtWelcome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtWelcome1.setText("Welcome !");
-        add(txtWelcome1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 400, 95));
+        add(txtWelcome1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 400, 95));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 500, 510));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel txtWelcome1;
     // End of variables declaration//GEN-END:variables
 }

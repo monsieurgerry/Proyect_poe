@@ -3,6 +3,7 @@ package pub.frames;
 import pub.User;
 
 import java.awt.Color;
+import java.awt.Toolkit;
 
 public class Ingresar extends javax.swing.JFrame {
 
@@ -52,6 +53,7 @@ public class Ingresar extends javax.swing.JFrame {
   public Ingresar() {
     initComponents();
     setLocationRelativeTo(null);
+    setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/Logo_toolkit.png")));
     // pgRegistrarBebida.bebida.pushBeer("Corona", "Grupo Modelo", 200, 355, (float)4.5, "Pilsener", true);
     // bebida.pushWine();
     pila.push("victor", "123"); // NOTA: no se agrega como el resto.
@@ -87,7 +89,7 @@ public class Ingresar extends javax.swing.JFrame {
         setLocationByPlatform(true);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(27, 31, 37));
+        jPanel1.setBackground(new java.awt.Color(39, 49, 55));
 
         Titulo.setBackground(new java.awt.Color(0, 0, 0));
         Titulo.setFont(new java.awt.Font("FreeSans", 1, 18)); // NOI18N
@@ -95,7 +97,7 @@ public class Ingresar extends javax.swing.JFrame {
         Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Titulo.setText("INICIAR SESION");
 
-        jtUsuario.setBackground(new java.awt.Color(27, 31, 37));
+        jtUsuario.setBackground(new java.awt.Color(39, 49, 55));
         jtUsuario.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
         jtUsuario.setForeground(new java.awt.Color(102, 102, 102));
         jtUsuario.setText("Ingrese su nombre de usuario");
@@ -118,7 +120,7 @@ public class Ingresar extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(73, 168, 245));
 
-        jpPass.setBackground(new java.awt.Color(27, 31, 37));
+        jpPass.setBackground(new java.awt.Color(39, 49, 55));
         jpPass.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
         jpPass.setForeground(new java.awt.Color(102, 102, 102));
         jpPass.setText("jPasswordField1");
@@ -142,7 +144,7 @@ public class Ingresar extends javax.swing.JFrame {
         jbIngresar.setBorder(null);
         jbIngresar.setBorderPainted(false);
         jbIngresar.setContentAreaFilled(false);
-        jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jbIngresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jbIngresar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1_gradientPressed.png"))); // NOI18N
         jbIngresar.addActionListener(new java.awt.event.ActionListener() {

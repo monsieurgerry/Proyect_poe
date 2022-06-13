@@ -41,10 +41,10 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(27, 31, 37));
+        setBackground(new java.awt.Color(39, 49, 55));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Title.setBackground(new java.awt.Color(188, 183, 174));
+        Title.setBackground(new java.awt.Color(39, 49, 55));
         Title.setFont(new java.awt.Font("SF Pro Display", 1, 48)); // NOI18N
         Title.setForeground(new java.awt.Color(188, 183, 174));
         Title.setText("REGISTRO DE COMIDAS");
@@ -80,31 +80,31 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         txSize.setText("Tamaño:");
         add(txSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
 
-        jtfNombre.setBackground(new java.awt.Color(27, 31, 37));
+        jtfNombre.setBackground(new java.awt.Color(39, 49, 55));
         jtfNombre.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfNombre.setForeground(new java.awt.Color(204, 204, 204));
         jtfNombre.setBorder(null);
         add(jtfNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 530, -1));
 
-        jtfTipo.setBackground(new java.awt.Color(27, 31, 37));
+        jtfTipo.setBackground(new java.awt.Color(39, 49, 55));
         jtfTipo.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfTipo.setForeground(new java.awt.Color(204, 204, 204));
         jtfTipo.setBorder(null);
         add(jtfTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 530, -1));
 
-        jtfPrecio.setBackground(new java.awt.Color(27, 31, 37));
+        jtfPrecio.setBackground(new java.awt.Color(39, 49, 55));
         jtfPrecio.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfPrecio.setForeground(new java.awt.Color(204, 204, 204));
         jtfPrecio.setBorder(null);
         add(jtfPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 530, -1));
 
-        jtfCal.setBackground(new java.awt.Color(27, 31, 37));
+        jtfCal.setBackground(new java.awt.Color(39, 49, 55));
         jtfCal.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfCal.setForeground(new java.awt.Color(204, 204, 204));
         jtfCal.setBorder(null);
         add(jtfCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 530, -1));
 
-        jtfSize.setBackground(new java.awt.Color(27, 31, 37));
+        jtfSize.setBackground(new java.awt.Color(39, 49, 55));
         jtfSize.setFont(new java.awt.Font("SF Pro", 0, 14)); // NOI18N
         jtfSize.setForeground(new java.awt.Color(204, 204, 204));
         jtfSize.setBorder(null);
@@ -118,7 +118,7 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         bRegistrar.setBorder(null);
         bRegistrar.setBorderPainted(false);
         bRegistrar.setContentAreaFilled(false);
-        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bRegistrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +136,7 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         bEliminar.setBorder(null);
         bEliminar.setBorderPainted(false);
         bEliminar.setContentAreaFilled(false);
-        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bEliminar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bEliminar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +154,7 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         bVolver.setBorder(null);
         bVolver.setBorderPainted(false);
         bVolver.setContentAreaFilled(false);
-        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bVolver.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/images/btn1Large_gradientPressed.png"))); // NOI18N
         bVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -164,18 +164,23 @@ public class pgRegistrarComida extends javax.swing.JPanel {
         });
         add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 200, 60));
 
+        jSeparator1.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator1.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 530, -1));
 
+        jSeparator2.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator2.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 530, 10));
 
+        jSeparator3.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator3.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 530, 10));
 
+        jSeparator4.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator4.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 530, 10));
 
+        jSeparator5.setBackground(new java.awt.Color(39, 49, 55));
         jSeparator5.setForeground(new java.awt.Color(73, 168, 245));
         add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 530, 10));
         add(Mensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 720, 20));
